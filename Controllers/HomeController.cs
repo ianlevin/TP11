@@ -22,6 +22,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Filtro(string filtro)
+    {
+        switch(filtro){
+            case "color":
+                break;
+        }
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
