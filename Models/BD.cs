@@ -4,15 +4,6 @@ using Dapper;
 public static class BD{
     private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BD_TP11;Trusted_Connection=True;";
 
-    public static List<Articulo> ObtenerArticulos(){
-        List<Articulo> user = new List<Articulo>();
-        using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "SELECT * FROM Articulo";
-            user = db.Query<Articulo>(sql).ToList();                                                              
-        }
-        return user;
-    }
-
     public static Auto ObtenerAuto(int idAuto){
         Auto user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
