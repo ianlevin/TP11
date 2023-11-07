@@ -22,22 +22,37 @@ public class HomeController : Controller
     {
         return View();
     }
-<<<<<<< HEAD
     public IActionResult Home()
     {
         ViewBag.ListaAutos = BD.ObtenerAutos();
+        ViewBag.ListaColores = BD.ObtenerColores();
+        ViewBag.Lista = BD.ObtenerMarcas();
+        ViewBag.ListaColores = BD.ObtenerModelos();
+        ViewBag.ListaColores = BD.ObtenerDirecciones();
+        ViewBag.ListaColores = BD.ObtenerTransmisiones();
+
         return View();
     }
     public IActionResult Filtro(string filtro, string Id)
-=======
-    public IActionResult Filtro(string filtro)
->>>>>>> 9adbf77927473cf12a09b04a1b51ee9cdeb25ba7
     {
         switch(filtro){
             case "color":
+                List<Auto> ListaAutos = BD.ObtenerColor(Id); 
+                break;
+            case "marca":
+                List<Auto> ListaAutos = BD.ObtenerMarca(Id); 
+                break;
+            case "modelo":
+                List<Auto> ListaAutos = BD.ObtenerModelo(Id); 
+                break;
+            case "direccion":
+                List<Auto> ListaAutos = BD.ObtenerDireccion(Id); 
+                break;
+            case "transmision":
+                List<Auto> ListaAutos = BD.ObtenerTransmision(Id); 
                 break;
         }
-        return View();
+        return View("Home");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
