@@ -72,7 +72,7 @@ public static class BD{
     public static void CrearAuto(Auto nuevoAuto){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "INSERT INTO Auto(Año, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo) VALUES (Año, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo)";
-            user = db.Execute(sql, new {Año = nuevoAuto.Año, Kilometraje = nuevoAuto.Kilometraje, Matricula = nuevoAuto.Matricula, Disponible = nuevoAuto.Disponible, Asientos = nuevoAuto.Asientos, Motor = nuevoAuto.Motor, AireAcondicionado = nuevoAuto.AireAcondicionado, ABS = nuevoAuto.ABS, Airbag = nuevo.Airbag, IdColor = nuevoAuto.IdColor, IdTransmision = nuevoAuto.IdTransmision, IdDireccion = nuevoAuto.IdDireccion, IdMarca = nuevoAuto.IdMarca, IdUsuario = nuevoAuto.IdUsuario, Imagen = nuevoAuto.Imagen, IdModelo = nuevoAuto.IdModelo});
+            db.Execute(sql, new {Año = nuevoAuto.Año, Kilometraje = nuevoAuto.Kilometraje, Matricula = nuevoAuto.Matricula, Disponible = nuevoAuto.Disponible, Asientos = nuevoAuto.Asientos, Motor = nuevoAuto.Motor, AireAcondicionado = nuevoAuto.AireAcondicionado, ABS = nuevoAuto.ABS, Airbag = nuevo.Airbag, IdColor = nuevoAuto.IdColor, IdTransmision = nuevoAuto.IdTransmision, IdDireccion = nuevoAuto.IdDireccion, IdMarca = nuevoAuto.IdMarca, IdUsuario = nuevoAuto.IdUsuario, Imagen = nuevoAuto.Imagen, IdModelo = nuevoAuto.IdModelo});
         }
     }
 }
