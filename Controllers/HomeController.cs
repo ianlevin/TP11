@@ -33,23 +33,24 @@ public class HomeController : Controller
 
         return View();
     }
-    public IActionResult Filtro(string filtro, string Id)
+    public IActionResult Filtro(string filtro, int Id)
     {
+        List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
             case "color":
-                List<Auto> ListaAutos = BD.ObtenerColor(Id); 
+                ListaAutos = BD.ObtenerColor(Id); 
                 break;
             case "marca":
-                List<Auto> ListaAutos = BD.ObtenerMarca(Id); 
+                ListaAutos = BD.ObtenerMarca(Id); 
                 break;
             case "modelo":
-                List<Auto> ListaAutos = BD.ObtenerModelo(Id); 
+                ListaAutos = BD.ObtenerModelo(Id); 
                 break;
             case "direccion":
-                List<Auto> ListaAutos = BD.ObtenerDireccion(Id); 
+                ListaAutos = BD.ObtenerDireccion(Id); 
                 break;
             case "transmision":
-                List<Auto> ListaAutos = BD.ObtenerTransmision(Id); 
+                ListaAutos = BD.ObtenerTransmision(Id); 
                 break;
         }
         return View("Home");
