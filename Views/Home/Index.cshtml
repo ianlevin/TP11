@@ -1,4 +1,10 @@
 <div class="container" id="container">
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Error;
+        </div>
+    }
     <div class="form-container sign-up">
         <form action='@Url.Action("SignUp")' method="post">
             <h1>Crear Cuenta</h1>
