@@ -41,7 +41,7 @@ public class HomeController : Controller
                 List<Auto> ListaAutos = BD.ObtenerModelo(Id); 
                 break;
         }
-        return View();
+        return View("Home");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
