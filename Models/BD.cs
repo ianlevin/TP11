@@ -4,13 +4,8 @@ using Dapper;
 public static class BD{
     private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BD_TP11;Trusted_Connection=True;";
 
-<<<<<<< HEAD
-
-    public static Auto ObtenerAutos(){
-=======
     /*Listas*/
     public static List<Auto> ObtenerAutos(){
->>>>>>> 5bbf6667131b4b5c88a619e12c9b3c3b2b64196d
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto";
@@ -18,8 +13,6 @@ public static class BD{
         }
         return user;
     }
-<<<<<<< HEAD
-=======
     public static List<Color> ObtenerColores(){
         List<Color> user = new List<Color>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
@@ -62,7 +55,6 @@ public static class BD{
     }
     
     /*Objetos*/
->>>>>>> 5bbf6667131b4b5c88a619e12c9b3c3b2b64196d
     public static Auto ObtenerAuto(int idAuto){
         Auto user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
