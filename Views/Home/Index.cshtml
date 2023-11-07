@@ -1,33 +1,27 @@
 <div class="container" id="container">
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Error;
+        </div>
+    }
     <div class="form-container sign-up">
-        <form>
+        <form action='@Url.Action("SignUp")' method="post">
             <h1>Crear Cuenta</h1>
-            <div class="social-icons">
-                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
             <span>o usa tu email para registrarte</span>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="tel" placeholder="Telefono">
+            <input type="text" placeholder="Name" id="Name" value="" name="Name">
+            <input type="email" placeholder="Email" id="Email" value="" name="Email">
+            <input type="password" placeholder="Password" id="Password" value="" name="Password">
+            <input type="tel" placeholder="Telefono" id="Telefono" value="" name="Telefono" >
             <button>Crear</button>
         </form>
     </div>
     <div class="form-container sign-in">
-        <form>
+        <form action='@Url.Action("SignIn")' method="post">
             <h1>Loguearse</h1>
-            <div class="social-icons">
-                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
             <span>o usa tu email para loguearte</span>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email" id="Email" value="" name="Email" >
+            <input type="password" placeholder="Password" id="Password" value="" name="Password">
             <a href="#">Te olvidaste tu contraseña?</a>
             <button>Loguearse</button>
         </form>
@@ -56,6 +50,10 @@
 
     registerBtn.addEventListener('click', () => {
     container.classList.add("active");
+    });
+
+    loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
     });
 </script>
 
