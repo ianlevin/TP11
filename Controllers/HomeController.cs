@@ -27,11 +27,11 @@ public class HomeController : Controller
     {
         Usuario User = BD.ObtenerUsuario(Username);
         ViewBag.Usuario = User;
-        if(BD.ObtenerUsuario(Username) == null || Usuario.GetContrasena() != Contrasena){
+        if(BD.ObtenerUsuario(Username) == null || User.GetContrasena() != Contrasena){
             ViewBag.Error = "Usuario o contraseña incorrectos";
-            return View("Login");
+            return View("Index");
         }
-        return View();
+        return View("Home");
         
     }
     public IActionResult SignUp()

@@ -18685,11 +18685,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
