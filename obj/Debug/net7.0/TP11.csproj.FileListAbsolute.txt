@@ -29,6 +29,19 @@ Z:\TP11\obj\Debug\net7.0\refint\TP11.dll
 Z:\TP11\obj\Debug\net7.0\TP11.pdb
 Z:\TP11\obj\Debug\net7.0\TP11.genruntimeconfig.cache
 Z:\TP11\obj\Debug\net7.0\ref\TP11.dll
+<<<<<<< HEAD
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.csproj.AssemblyReference.cache
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.AssemblyInfoInputs.cache
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.AssemblyInfo.cs
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.csproj.CoreCompileInputs.cache
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.RazorAssemblyInfo.cache
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.RazorAssemblyInfo.cs
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.dll
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\refint\TP11.dll
+C:\Users\47569637\Desktop\TP11\obj\Debug\net7.0\TP11.pdb
+=======
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.csproj.AssemblyReference.cache
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.AssemblyInfoInputs.cache
@@ -40,3 +53,4 @@ C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.RazorAssemblyInfo.cs
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.dll
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\refint\TP11.dll
 C:\Users\47490408\Downloads\TP11\obj\Debug\net7.0\TP11.pdb
+>>>>>>> eeed1902f8e2ce39b36427c9353186957f7b4688
