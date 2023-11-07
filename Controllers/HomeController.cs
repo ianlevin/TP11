@@ -23,11 +23,11 @@ public class HomeController : Controller
         return View();{}
     }
 
-    public IActionResult SignIn(string Email, string Contrasena)
+    public IActionResult SignIn(string Email, string Password)
     {
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
-        if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Contrasena){
+        if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
         }
