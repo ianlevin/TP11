@@ -4,6 +4,7 @@ using Dapper;
 public static class BD{
     private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BD_TP11;Trusted_Connection=True;";
 
+    /*Listas*/
     public static List<Auto> ObtenerAutos(){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
@@ -12,6 +13,48 @@ public static class BD{
         }
         return user;
     }
+    public static List<Color> ObtenerColores(){
+        List<Color> user = new List<Color>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Color";
+            user = db.Query<Color>(sql).ToList();
+        }
+        return user;
+    }
+    public static List<Direccion> ObtenerDirecciones(){
+        List<Direccion> user = new List<Direccion>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Direccion";
+            user = db.Query<Direccion>(sql).ToList();
+        }
+        return user;
+    }
+    public static List<Marca> ObtenerMarcas(){
+        List<Marca> user = new List<Marca>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Marca";
+            user = db.Query<Marca>(sql).ToList();
+        }
+        return user;
+    }
+    public static List<Modelo> ObtenerModelos(){
+        List<Modelo> user = new List<Modelo>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Modelo";
+            user = db.Query<Modelo>(sql).ToList();
+        }
+        return user;
+    }
+    public static List<Transmision> ObtenerTransmisiones(){
+        List<Transmision> user = new List<Transmision>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Transmision";
+            user = db.Query<Transmision>(sql).ToList();
+        }
+        return user;
+    }
+    
+    /*Objetos*/
     public static Auto ObtenerAuto(int idAuto){
         Auto user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
