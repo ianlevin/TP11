@@ -22,7 +22,12 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Filtro(string filtro, int Id)
+    public IActionResult Home()
+    {
+        ViewBag.ListaAutos = BD.ObtenerAutos();
+        return View();
+    }
+    public IActionResult Filtro(string filtro, string Id)
     {
         switch(filtro){
             case "color":
