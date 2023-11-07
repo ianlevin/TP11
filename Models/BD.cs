@@ -20,6 +20,22 @@ public static class BD{
         }
         return user;
     }
+    public static Color ObtenerColor(int idColor){
+        Color user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Color WHERE IdColor = @idCol";
+            user = db.QueryFirstOrDefault<Color>(sql, new {idCol = idColor});
+        }
+        return user;
+    }
+    public static Direccion ObtenerDireccion(int idDireccion){
+        Direccion user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Direccion WHERE IdDireccion = @idDir";
+            user = db.QueryFirstOrDefault<Direccion>(sql, new {idDir = idDireccion});
+        }
+        return user;
+    }
     public static Marca ObtenerMarca(int idMarca){
         Marca user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
@@ -28,10 +44,20 @@ public static class BD{
         }
         return user;
     }
-    public static void CrearAuto(string Username, string Contrasena, string Nombre, string Apellido, string Email, string preguntaSeguridad){
+    public static Modelo ObtenerModelo(int idModelo){
+        Modelo user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "INSERT INTO Usuario(username, contrasena, nombre, apellido, email, preguntaSeguridad) VALUES (@Usuario, @Contra, @Nom, @Ape, @Em, @PS)";
-            db.Execute(sql, new {Usuario = Username, Contra = Contrasena, Nom = Nombre, Ape = Apellido, Em = Email, PS = preguntaSeguridad});
+            string sql = "SELECT * FROM Modelo WHERE IdModelo = @idMod";
+            user = db.QueryFirstOrDefault<Modelo>(sql, new {idMod = idModelo});
         }
+        return user;
+    }
+    public static Transmision ObtenerTransmision(int idTransmision){
+        Transmision user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Transmision WHERE IdTransmision = @idTran";
+            user = db.QueryFirstOrDefault<Transmision>(sql, new {idTran = idTransmision});
+        }
+        return user;
     }
 }
