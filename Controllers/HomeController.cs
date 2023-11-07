@@ -20,10 +20,15 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        return View();{}
+    }
+
+    public IActionResult LogIn()
+    {
+        return RedirectToAction("Home");
     }
     public IActionResult Home()
-    {
+    {   
         ViewBag.ListaAutos = BD.ObtenerAutos();
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.Lista = BD.ObtenerMarcas();

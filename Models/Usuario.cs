@@ -7,9 +7,10 @@ public class Usuario{
     public int Telefono {get; set;}
     public string Direccion {get; set;}
     public bool Admin {get; set;}
+    private string Contrasena {get;set;}
 
     public Usuario(){}
-    public Usuario(int idU, DateTime fechaN, string nom, string ape, string em, int tel, string dire, bool adm){
+    public Usuario(int idU, DateTime fechaN, string nom, string ape, string em, int tel, string dire, bool adm, string contr){
         IdUsuario = idU;
         FechaNacimiento = fechaN;
         Nombre = nom;
@@ -18,5 +19,6 @@ public class Usuario{
         Telefono = tel;
         Direccion = dire;
         Admin = adm;
+        Contrasena = contr;
     }
 }
