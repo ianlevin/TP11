@@ -60,4 +60,11 @@ public static class BD{
         }
         return user;
     }
+
+    public static void CrearAuto(Auto nuevoAuto){
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "INSERT INTO Auto VALUES (nuevoAuto.)";
+            user = db.QueryFirstOrDefault<Transmision>(sql, new {idTran = idTransmision});
+        }
+    }
 }
