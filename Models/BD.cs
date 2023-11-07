@@ -2,7 +2,7 @@ using System.Data.SqlClient;
 using Dapper;
 
 public static class BD{
-    private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BD_TP11;Trusted_Connection=True;";
+    private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BDAutosAlRio;Trusted_Connection=True;";
 
     /*Listas*/
     public static List<Auto> ObtenerAutos(){
@@ -63,11 +63,11 @@ public static class BD{
         }
         return user;
     }
-    public static Usuario ObtenerUsuario(string username){
+    public static Usuario ObtenerUsuario(string Email){
         Usuario user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "SELECT * FROM Usuario WHERE Nombre = @nom";
-            user = db.QueryFirstOrDefault<Usuario>(sql, new {nom = username});
+            string sql = "SELECT * FROM Usuario WHERE Email = @email";
+            user = db.QueryFirstOrDefault<Usuario>(sql, new {email = Email});
         }
         return user;
     }

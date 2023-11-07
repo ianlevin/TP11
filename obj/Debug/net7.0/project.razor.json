@@ -18643,6 +18643,7 @@
     "CSharpLanguageVersion": 1100
   },
   "RootNamespace": "TP11",
+<<<<<<< HEAD
   "Documents": [
     {
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Home\\Usuario.cshtml",
@@ -18656,15 +18657,31 @@
     },
     {
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Home\\Creditos.cshtml",
+=======
+<<<<<<< HEAD
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Creditos.cshtml",
+>>>>>>> be9258b6f0b061b07be0f5077482ac4b70c953c8
       "TargetPath": "Views\\Home\\Creditos.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\_ViewImports.cshtml",
+=======
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Home.cshtml",
+      "TargetPath": "Views\\Home\\Home.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\_ViewImports.cshtml",
+>>>>>>> be9258b6f0b061b07be0f5077482ac4b70c953c8
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -18676,10 +18693,14 @@
     },
     {
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Shared\\_Layout.cshtml",
+=======
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Shared\\_Layout.cshtml",
+>>>>>>> be9258b6f0b061b07be0f5077482ac4b70c953c8
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Home\\Carrito.cshtml",
       "TargetPath": "Views\\Home\\Carrito.cshtml",
       "FileKind": "mvc"
@@ -18691,14 +18712,53 @@
     },
     {
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Home\\CargarAuto.cshtml",
+=======
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\CargarAuto.cshtml",
+>>>>>>> be9258b6f0b061b07be0f5077482ac4b70c953c8
       "TargetPath": "Views\\Home\\CargarAuto.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\47569637\\Desktop\\TP11\\Views\\Home\\Home.cshtml",
       "TargetPath": "Views\\Home\\Home.cshtml",
       "FileKind": "mvc"
     }
   ],
+=======
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Usuario.cshtml",
+      "TargetPath": "Views\\Home\\Usuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47295402\\Desktop\\TP11\\Views\\Home\\Carrito.cshtml",
+      "TargetPath": "Views\\Home\\Carrito.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+=======
+  "Documents": [],
+>>>>>>> 16a35c938491dbd6d62a82da2fa9e1ab1b60994d
+>>>>>>> be9258b6f0b061b07be0f5077482ac4b70c953c8
   "SerializationFormat": "0.3"
 }
