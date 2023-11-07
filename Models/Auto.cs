@@ -16,9 +16,10 @@ public class Auto{
     public int IdUsuario {get; set;}
     public string Imagen {get; set;}
     public int IdModelo {get; set;}
+    public double Precio {get; set;}
 
     public Auto(){}
-    public Auto(int idAu, int anio, int km, string matr, bool dispo, int asi, string mtr, bool aire, bool ab, bool airb, int idCo, int idTr, int idDi, int idMa, int idUs, string img, int idMo){
+    public Auto(int idAu, int anio, int km, string matr, bool dispo, int asi, string mtr, bool aire, bool ab, bool airb, int idCo, int idTr, int idDi, int idMa, int idUs, string img, int idMo, double prec){
         IdAuto = idAu;
         Año = anio;
         Kilometraje = km;
@@ -36,5 +37,6 @@ public class Auto{
         IdUsuario = idUs;
         Imagen = img;
         IdModelo = idMo;
+        Precio = prec;
     }
 }

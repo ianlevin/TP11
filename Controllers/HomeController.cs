@@ -20,10 +20,26 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
+        return View();{}
+    }
+
+    public IActionResult SignIn(string Username, string Contrasena)
+    {
+        Usuario User = BD.ObtenerUsuario(Username);
+        ViewBag.Usuario = User;
+        if(BD.ObtenerUsuario(Username) == null || Usuario.GetContrasena() != Contrasena){
+            ViewBag.Error = "Usuario o contraseña incorrectos";
+            return View("Login");
+        }
         return View();
+        
+    }
+    public IActionResult SignUp()
+    {
+        return RedirectToAction("Home");
     }
     public IActionResult Home()
-    {
+    {   
         ViewBag.ListaAutos = BD.ObtenerAutos();
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.Lista = BD.ObtenerMarcas();
