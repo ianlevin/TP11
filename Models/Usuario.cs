@@ -21,4 +21,8 @@ public class Usuario{
         Admin = adm;
         Contrasena = contr;
     }
+
+    public string GetContrasena(){
+        return Contrasena;
+    }
 }
