@@ -36,16 +36,16 @@ public class HomeController : Controller
     }
     public IActionResult SignUp()
     {
-        return RedirectToAction("Home");
+        return RedirectToAction("SignIn");
     }
     public IActionResult Home()
     {   
         ViewBag.ListaAutos = BD.ObtenerAutos();
         ViewBag.ListaColores = BD.ObtenerColores();
-        ViewBag.Lista = BD.ObtenerMarcas();
-        ViewBag.ListaColores = BD.ObtenerModelos();
-        ViewBag.ListaColores = BD.ObtenerDirecciones();
-        ViewBag.ListaColores = BD.ObtenerTransmisiones();
+        ViewBag.ListaMarcas = BD.ObtenerMarcas();
+        ViewBag.ListaModelos = BD.ObtenerModelos();
+        ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
+        ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
 
         return View();
     }

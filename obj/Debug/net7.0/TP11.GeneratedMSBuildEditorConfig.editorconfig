@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP11
 build_property.RootNamespace = TP11
-build_property.ProjectDir = C:\Users\47569637\Desktop\TP11\
+build_property.ProjectDir = C:\Users\47490408\TP11\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\47569637\Desktop\TP11
+build_property.MSBuildProjectDirectory = C:\Users\47490408\TP11
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/CargarAuto.cshtml]
+[C:/Users/47490408/TP11/Views/Home/CargarAuto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJnYXJBdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/Carrito.cshtml]
+[C:/Users/47490408/TP11/Views/Home/Carrito.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJyaXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/Creditos.cshtml]
+[C:/Users/47490408/TP11/Views/Home/Creditos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/Home.cshtml]
+[C:/Users/47490408/TP11/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/Index.cshtml]
+[C:/Users/47490408/TP11/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Home/Usuario.cshtml]
+[C:/Users/47490408/TP11/Views/Home/Usuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc3VhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Shared/Error.cshtml]
+[C:/Users/47490408/TP11/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/47490408/TP11/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/_ViewImports.cshtml]
+[C:/Users/47490408/TP11/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/_ViewStart.cshtml]
+[C:/Users/47490408/TP11/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47569637/Desktop/TP11/Views/Shared/_Layout.cshtml]
+[C:/Users/47490408/TP11/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-crqzjy7pi9
