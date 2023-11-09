@@ -1,0 +1,24 @@
+@{
+    for(int i = 0; i < @ViewBag.ListaAutos.Count; i++){
+        <div class="col-md-4">
+        <div class="card rounded">
+            <div class="card-image">
+                <span class="card-notify-badge">Low KMS</span>
+                <span class="card-notify-year">@ViewBag.ListaAutos[i].Año</span>
+                <img class="img-fluid" src="@ViewBag.ListaAutos[i].Imagen" alt="@ViewBag.ListaAutos[i].Modelo" />
+            </div>
+            <div class="card-image-overlay m-auto">
+                <span class="card-detail-badge">Used</span>
+                <span class="card-detail-badge">@ViewBag.ListaAutos[i].Precio</span>
+                <span class="card-detail-badge">@ViewBag.ListaAutos[i].Kilometraje</span>
+            </div>
+            <div class="card-body text-center">
+                <div class="ad-title m-auto">
+                    <h5>@ViewBag.ListaModelos[@ViewBag.ListaAutos.IdModelo]</h5>
+                </div>
+                <a class="ad-btn" href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    }
+}
