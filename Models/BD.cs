@@ -8,7 +8,7 @@ public static class BD{
     public static List<Auto> ObtenerAutos(){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "exec sp_ObtenerAutos";
+            string sql = "SELECT * FROM Auto";
             user = db.Query<Auto>(sql).ToList();
         }
         return user;
@@ -122,7 +122,7 @@ public static class BD{
     public static void CrearUsuario(Usuario user){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "INSERT INTO Usuario(Nombre, Email, Telefono, Contrasena) VALUES (pNombre, pEmail, pTelefono, pContrasena)";
-            db.Execute(sql, new {pNombre = user.Nombre, pEmail = user.Email, pTelefono = user.Telefono, pContrasena = user.Contrasena});
+            db.Execute(sql, new {pNombre = user.Nombre, pEmail = user.Email, pTelefono = user.Telefono, pContrasena = user.GetContrasena()});
         }
     }
 }

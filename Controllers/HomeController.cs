@@ -31,12 +31,12 @@ public class HomeController : Controller
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
         }
-        return View("Home");
+        return RedirectToAction("Home");
         
     }
     public IActionResult SignUp()
     {
-        return RedirectToAction("SignIn");
+        return RedirectToAction("Home");
     }
     public IActionResult Home()
     {   
