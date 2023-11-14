@@ -1,10 +1,10 @@
-<div class="container" id="container">
-    @if (ViewBag.Error != null)
+@if (ViewBag.Error != null)
     {
-        <div class="alert alert-danger" role="alert">
-            @ViewBag.Error;
+        <div class="alert alert-danger" role="alert" id="error">
+            @ViewBag.Error
         </div>
     }
+<div class="container" id="container">
     <div class="form-container sign-up">
         <form action='@Url.Action("SignUp")' method="post">
             <h1>Crear Cuenta</h1>
