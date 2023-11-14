@@ -34,8 +34,10 @@ public class HomeController : Controller
         return RedirectToAction("Home");
         
     }
-    public IActionResult SignUp()
+    public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
     {
+        Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
+        BD.CrearUsuario(user);
         return RedirectToAction("Home");
     }
     public IActionResult Home()

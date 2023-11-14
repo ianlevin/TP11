@@ -121,8 +121,8 @@ public static class BD{
 
     public static void CrearUsuario(Usuario user){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "INSERT INTO Usuario(Nombre, Email, Telefono, Contrasena) VALUES (pNombre, pEmail, pTelefono, pContrasena)";
-            db.Execute(sql, new {pNombre = user.Nombre, pEmail = user.Email, pTelefono = user.Telefono, pContrasena = user.GetContrasena()});
+            string sql = "INSERT INTO Usuario(NombreUsuario, Email, Telefono, Contrasena, Admin) VALUES (@nombre, @email, @telefono, @contrasena, @admin)";
+            db.Execute(sql, new {nombre = user.Nombre, email = user.Email, telefono = user.Telefono, contrasena = user.GetContrasena(), admin = user.Admin});
         }
     }
 }

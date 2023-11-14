@@ -80,6 +80,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img-autos\amarok.png))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img-autos\bora.png))">
       <SourceType>Package</SourceType>
       <SourceId>TP11</SourceId>
@@ -96,6 +98,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img-autos\bora.png))</OriginalItemSpec>
     </StaticWebAsset>
+>>>>>>> 278a02f6e99ad7f478f0b37fe91129b525464654
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img-autos\bronco.png))">
       <SourceType>Package</SourceType>
       <SourceId>TP11</SourceId>
