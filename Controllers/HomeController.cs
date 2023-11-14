@@ -35,10 +35,16 @@ public class HomeController : Controller
         
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
-    {
-        Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
-        BD.CrearUsuario(user);
-        return RedirectToAction("Home");
+    {   
+        if(BD.ExisteUsuario(email) == true){
+            ViewBag.Error = "Ya existe ese usuario ingrese un Email diferente";
+            return View("Index");
+        }else{
+            Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
+            BD.CrearUsuario(user);
+            return RedirectToAction("Home");
+        }
+        
     }
     public IActionResult Home()
     {   
