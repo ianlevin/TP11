@@ -114,8 +114,8 @@ public static class BD{
 
     public static void CrearAuto(Auto nuevoAuto){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "INSERT INTO Auto(Año, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio) VALUES (pAño, pKilometraje, pMatricula, pDisponible, pAsientos, pMotor, pAireAcondicionado, pABS, pAirbag, pIdColor, pIdTransmision, pIdDireccion, pIdMarca, pIdUsuario, pImagen, pIdModelo, pPrecio)";
-            db.Execute(sql, new {pAño = nuevoAuto.Anio, pKilometraje = nuevoAuto.Kilometraje, pMatricula = nuevoAuto.Matricula, pDisponible = nuevoAuto.Disponible, pAsientos = nuevoAuto.Asientos, pMotor = nuevoAuto.Motor, pAireAcondicionado = nuevoAuto.AireAcondicionado, pABS = nuevoAuto.ABS, pAirbag = nuevoAuto.Airbag, pIdColor = nuevoAuto.IdColor, pIdTransmision = nuevoAuto.IdTransmision, pIdDireccion = nuevoAuto.IdDireccion, pIdMarca = nuevoAuto.IdMarca, pIdUsuario = nuevoAuto.IdUsuario, pImagen = nuevoAuto.Imagen, pIdModelo = nuevoAuto.IdModelo, pPrecio = nuevoAuto.Precio});
+            string sql = "INSERT INTO Auto(Ano, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio) VALUES (pAño, pKilometraje, pMatricula, pDisponible, pAsientos, pMotor, pAireAcondicionado, pABS, pAirbag, pIdColor, pIdTransmision, pIdDireccion, pIdMarca, pIdUsuario, pImagen, pIdModelo, pPrecio)";
+            db.Execute(sql, new {pAño = nuevoAuto.Ano, pKilometraje = nuevoAuto.Kilometraje, pMatricula = nuevoAuto.Matricula, pDisponible = nuevoAuto.Disponible, pAsientos = nuevoAuto.Asientos, pMotor = nuevoAuto.Motor, pAireAcondicionado = nuevoAuto.AireAcondicionado, pABS = nuevoAuto.ABS, pAirbag = nuevoAuto.Airbag, pIdColor = nuevoAuto.IdColor, pIdTransmision = nuevoAuto.IdTransmision, pIdDireccion = nuevoAuto.IdDireccion, pIdMarca = nuevoAuto.IdMarca, pIdUsuario = nuevoAuto.IdUsuario, pImagen = nuevoAuto.Imagen, pIdModelo = nuevoAuto.IdModelo, pPrecio = nuevoAuto.Precio});
         }
     }
 
