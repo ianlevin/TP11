@@ -35,10 +35,37 @@ public class HomeController : Controller
         
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
+    {   
+        if(BD.ExisteUsuario(email) == true){
+            ViewBag.Error = "Ya existe ese usuario ingrese un Email diferente";
+            return View("Index");
+        }else{
+            Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
+            BD.CrearUsuario(user);
+            return RedirectToAction("Home");
+        }
+        
+    }
+
+    public IActionResult ProductoBuscado(string producto)
     {
-        Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
-        BD.CrearUsuario(user);
-        return RedirectToAction("Home");
+            string productoMinuscula = producto.ToLower();
+            List<Modelo>listaElementos = new List<Modelo>();
+            listaElementos = BD.ObtenerModelos();
+            List<Auto>listaProductos = new List<Auto>();
+
+            for(int i = 0; i<listaElementos.Count; i++){
+                if(listaElementos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                    listaProductos.AddRange(BD.ObtenerModelo(listaElementos[i].IdModelo));
+                }
+            }
+            ViewBag.buscado = producto;
+
+            if(listaProductos.Count > 0){
+                ViewBag.productos = listaProductos;
+            }
+
+            return View("Home");
     }
     public IActionResult Home()
     {   

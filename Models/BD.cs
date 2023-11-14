@@ -125,4 +125,16 @@ public static class BD{
             db.Execute(sql, new {nombre = user.Nombre, email = user.Email, telefono = user.Telefono, contrasena = user.GetContrasena(), admin = user.Admin});
         }
     }
+
+    public static bool ExisteUsuario(string Email){
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Usuario WHERE Email = @email";
+            if((db.QueryFirstOrDefault(sql, new {email = Email})) == null){
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    }
 }
