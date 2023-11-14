@@ -112,6 +112,15 @@ public static class BD{
         return user;
     }
 
+    public static string ObtenerNombreModelo(int idModelo){
+        string nombreModelo = "";
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT NombreModelo FROM Modelo WHERE IdModelo = @idMod";
+            nombreModelo = db.QueryFirstOrDefault<string>(sql, new {idMod = idModelo});
+        }
+        return nombreModelo;
+    }
+
     public static void CrearAuto(Auto nuevoAuto){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "INSERT INTO Auto(Ano, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio) VALUES (pAño, pKilometraje, pMatricula, pDisponible, pAsientos, pMotor, pAireAcondicionado, pABS, pAirbag, pIdColor, pIdTransmision, pIdDireccion, pIdMarca, pIdUsuario, pImagen, pIdModelo, pPrecio)";

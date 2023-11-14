@@ -1,14 +1,26 @@
 <link rel="stylesheet" href="~/css/home.css">
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Navbar</a>
+    <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Publicar</a></li>
+
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
 <div class="mainAutos">
     @{
-        for(int i = 0; i < @ViewBag.ListaAutos.Count; i++)
+        foreach(Auto auto in @ViewBag.ListaAutos)
         {
             <div class="card">
-                <img src="@ViewBag.ListaAutos[i].Imagen" alt="img" style="width:100%">
+                <img src="/wwwroot/img-autos/@auto.Imagen" alt="img" style="width:100%">
                 <div class="containerCard">
-                    <h4>@ViewBag.ListaModelos[@ViewBag.ListaAutos[i].IdModelo].NombreModelo</h4>
-                    <p>@ViewBag.ListaAutos[i].Anio</p>
-                    <p>@ViewBag.ListaAutos[i].Kilometraje</p>
+                    <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
+                    <p>Año: @auto.Ano</p>
+                    <p>Kilometraje: @auto.Kilometraje</p>
                 </div>
             </div>
         }

@@ -8,6 +8,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
+      padding: 2rem;
+      background-color: #c9d6ff;
+      background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+      height: 100%;
 }
 
 .card {
