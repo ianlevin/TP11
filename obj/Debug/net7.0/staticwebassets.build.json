@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XxqLiLM3E60oQsm0U1HFR4Sk//cU+yBbKnwMBxEopZo=",
+  "Hash": "fdnsTvNwQogYZ+iwke5wSjqD+e69VTSY7Vx4niDsyxU=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img-autos\\amarok.png"
+    },
+    {
+      "Identity": "C:\\Users\\47490408\\TP11\\wwwroot\\img-autos\\bora.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47490408\\TP11\\wwwroot\\",
+      "BasePath": "_content/TP11",
+      "RelativePath": "img-autos/bora.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img-autos\\bora.png"
     },
     {
       "Identity": "C:\\Users\\47490408\\TP11\\wwwroot\\img-autos\\bronco.png",

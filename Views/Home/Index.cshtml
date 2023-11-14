@@ -1,18 +1,19 @@
-<div class="container" id="container">
-    @if (ViewBag.Error != null)
+<link rel="stylesheet" href="~/css/login.css">
+@if (ViewBag.Error != null)
     {
-        <div class="alert alert-danger" role="alert">
-            @ViewBag.Error;
+        <div class="alert alert-danger" role="alert" id="error">
+            @ViewBag.Error
         </div>
     }
+<div class="container" id="container">
     <div class="form-container sign-up">
         <form action='@Url.Action("SignUp")' method="post">
             <h1>Crear Cuenta</h1>
             <span>o usa tu email para registrarte</span>
-            <input type="text" placeholder="Name" id="Name" value="" name="Name">
-            <input type="email" placeholder="Email" id="Email" value="" name="Email">
-            <input type="password" placeholder="Password" id="Password" value="" name="Password">
-            <input type="tel" placeholder="Telefono" id="Telefono" value="" name="Telefono" >
+            <input type="text" placeholder="Name" id="Name" value="" name="nombre">
+            <input type="email" placeholder="Email" id="Email" value="" name="email">
+            <input type="password" placeholder="Password" id="Password" value="" name="contrasena">
+            <input type="tel" placeholder="Telefono" id="Telefono" value="" name="telefono" >
             <button>Crear</button>
         </form>
     </div>
