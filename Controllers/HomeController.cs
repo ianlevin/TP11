@@ -46,6 +46,27 @@ public class HomeController : Controller
         }
         
     }
+
+    public IActionResult ProductoBuscado(string producto)
+    {
+            string productoMinuscula = producto.ToLower();
+            List<Modelo>listaElementos = new List<Modelo>();
+            listaElementos = BD.ObtenerModelos();
+            List<Auto>listaProductos = new List<Auto>();
+
+            for(int i = 0; i<listaElementos.Count; i++){
+                if(listaElementos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                    listaProductos.AddRange(BD.ObtenerModelo(listaElementos[i].IdModelo));
+                }
+            }
+            ViewBag.buscado = producto;
+
+            if(listaProductos.Count > 0){
+                ViewBag.productos = listaProductos;
+            }
+
+            return View("Home");
+    }
     public IActionResult Home()
     {   
         ViewBag.ListaAutos = BD.ObtenerAutos();
