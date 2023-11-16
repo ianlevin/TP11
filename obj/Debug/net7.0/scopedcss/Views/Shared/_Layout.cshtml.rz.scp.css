@@ -1,23 +1,23 @@
-﻿* {
+*[b-crqzjy7pi9] {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-img{
+img[b-crqzjy7pi9]{
     width: 100%;
     display: flex;
 }
 
-a{
+a[b-crqzjy7pi9]{
     text-decoration: none;
 }
 
-body{
+body[b-crqzjy7pi9]{
     font-family: 'Poppins', sans-serif;
     background-color: #18181B;
 }
 
-nav{
+nav[b-crqzjy7pi9]{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -27,24 +27,24 @@ nav{
     gap: 2rem;
 }
 
-.nav-logo{
+.nav-logo[b-crqzjy7pi9]{
     max-width: 100px;
 }
 
-.nav-links{
+.nav-links[b-crqzjy7pi9]{
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.link a{
+.link a[b-crqzjy7pi9]{
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
 }
 
-.link a::after{
+.link a[b-crqzjy7pi9]::after{
     content: "";
     position: absolute;
     height: 2px;
@@ -55,11 +55,11 @@ nav{
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover[b-crqzjy7pi9]::after{
     width: 70%;
 }
 
-.btn{
+.btn[b-crqzjy7pi9]{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -69,6 +69,6 @@ nav{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover[b-crqzjy7pi9]{
     background-color: #1e40af;
 }

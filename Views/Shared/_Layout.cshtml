@@ -6,12 +6,34 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TP11.styles.css" asp-append-version="true" />
+    <ling rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
 </head>
 <body>
+    @if(ViewBag.NavBar == null){
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="link"><a href="#">Home</a></li>
+                <li id="link1" class="link"><a href="#">Comprar</a></li>
+                <li id="link2" class="link"><a href="#">Alquilar</a></li>
+                <li id="link3" class="link"><a href="#">Vender</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    }
+
     @RenderBody()
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

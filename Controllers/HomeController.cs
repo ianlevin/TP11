@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.NavBar = ",";
         return View();
     }
 
@@ -25,6 +26,7 @@ public class HomeController : Controller
 
     public IActionResult SignIn(string Email, string Password)
     {
+        ViewBag.NavBar = ",";
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
         if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
@@ -36,6 +38,7 @@ public class HomeController : Controller
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
     {   
+        ViewBag.NavBar = ",";
         if(BD.ExisteUsuario(email) == true){
             ViewBag.Error = "Ya existe ese usuario ingrese un Email diferente";
             return View("Index");
