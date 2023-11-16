@@ -101,6 +101,10 @@ public class HomeController : Controller
         return View("Home");
     }
 
+    public IActionResult CargarAuto(){
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
