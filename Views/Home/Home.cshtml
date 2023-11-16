@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="~/css/home.css">
-
-<div class="mainAutos">
+@if(ViewBag.ListaAutos != null){
+    <div class="mainAutos">
     @{
         foreach(Auto auto in @ViewBag.ListaAutos)
         {
@@ -14,5 +14,7 @@
             </div>
         }
       }
-</div>
+</div>        
+}
+
 

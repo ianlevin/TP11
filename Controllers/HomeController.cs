@@ -21,7 +21,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();{}
+        return View();
     }
 
     public IActionResult SignIn(string Email, string Password)
