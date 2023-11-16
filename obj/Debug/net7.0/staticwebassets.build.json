@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WWN6afX0LZWk/1CTpdVF/ZyKhF7RRuRb3JiAlVY/5pw=",
+  "Hash": "+b5obamzJb6RXOiud+Cl9cvgaP6tNg7L3gV8twvMcu4=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
-    },
-    {
-      "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\css\\navbar.css",
-      "SourceId": "TP11",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
-      "BasePath": "_content/TP11",
-      "RelativePath": "css/navbar.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\navbar.css"
     },
     {
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\css\\site.css",

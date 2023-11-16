@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.NavBar = ",";
         return View();
     }
 
@@ -25,6 +26,7 @@ public class HomeController : Controller
 
     public IActionResult SignIn(string Email, string Password)
     {
+        ViewBag.NavBar = ",";
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
         if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
@@ -36,6 +38,7 @@ public class HomeController : Controller
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
     {   
+        ViewBag.NavBar = ",";
         if(BD.ExisteUsuario(email) == true){
             ViewBag.Error = "Ya existe ese usuario ingrese un Email diferente";
             return View("Index");
@@ -50,19 +53,19 @@ public class HomeController : Controller
     public IActionResult ProductoBuscado(string producto)
     {
             string productoMinuscula = producto.ToLower();
-            List<Modelo>listaElementos = new List<Modelo>();
-            listaElementos = BD.ObtenerModelos();
-            List<Auto>listaProductos = new List<Auto>();
+            List<Modelo>listaModelos = new List<Modelo>();
+            listaModelos = BD.ObtenerModelos();
+            List<Auto>listaAutos = new List<Auto>();
 
-            for(int i = 0; i<listaElementos.Count; i++){
-                if(listaElementos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                    listaProductos.AddRange(BD.ObtenerModelo(listaElementos[i].IdModelo));
+            for(int i = 0; i<listaModelos.Count; i++){
+                if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                    listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
                 }
             }
             ViewBag.buscado = producto;
 
-            if(listaProductos.Count > 0){
-                ViewBag.productos = listaProductos;
+            if(listaAutos.Count > 0){
+                ViewBag.ListaAutos = listaAutos;
             }
 
             return View("Home");
@@ -99,6 +102,10 @@ public class HomeController : Controller
                 break;
         }
         return View("Home");
+    }
+
+    public IActionResult CargarAuto(){
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
