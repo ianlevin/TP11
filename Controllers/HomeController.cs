@@ -50,19 +50,19 @@ public class HomeController : Controller
     public IActionResult ProductoBuscado(string producto)
     {
             string productoMinuscula = producto.ToLower();
-            List<Modelo>listaElementos = new List<Modelo>();
-            listaElementos = BD.ObtenerModelos();
-            List<Auto>listaProductos = new List<Auto>();
+            List<Modelo>listaModelos = new List<Modelo>();
+            listaModelos = BD.ObtenerModelos();
+            List<Auto>listaAutos = new List<Auto>();
 
-            for(int i = 0; i<listaElementos.Count; i++){
-                if(listaElementos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                    listaProductos.AddRange(BD.ObtenerModelo(listaElementos[i].IdModelo));
+            for(int i = 0; i<listaModelos.Count; i++){
+                if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                    listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
                 }
             }
             ViewBag.buscado = producto;
 
-            if(listaProductos.Count > 0){
-                ViewBag.productos = listaProductos;
+            if(listaAutos.Count > 0){
+                ViewBag.ListaAutos = listaAutos;
             }
 
             return View("Home");
