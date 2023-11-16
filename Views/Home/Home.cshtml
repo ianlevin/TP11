@@ -5,13 +5,14 @@
     <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Publicar</a></li>
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <form action='@Url.Action("ProductoBuscado")'>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="producto" value="">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
 
-<div class="mainAutos">
+@if(ViewBag.ListaAutos != null){
+  <div class="mainAutos">
     @{
         foreach(Auto auto in @ViewBag.ListaAutos)
         {
@@ -24,5 +25,6 @@
                 </div>
             </div>
         }
-    }
-</div>
+      }
+  </div>
+}
