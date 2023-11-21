@@ -24,12 +24,15 @@
             
         <li>
             <form action='@Url.Action("Filtro")'>
-                @{
-                    for(int i = 0; i<ViewBag.ListaColores.Count; i++){
-                        <input type="radio" name="id" value="@ViewBag.ListaColores[i].IdColor">
+                <select name="id">
+                    @{
+                        for (int i = 0; i < ViewBag.ListaColores.Count; i++)
+                        {
+                            <option value="@ViewBag.ListaColores[i].IdColor">@ViewBag.ListaColores[i].NombreColor</option>
+                        }
                     }
-                }
-                <input type="submit" name="filtro" value="color">
+                </select>
+             <input type="submit" name="filtro" value="color">
             </form>
         </li>
     </ul>
