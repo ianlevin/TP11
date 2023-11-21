@@ -51,7 +51,12 @@ public class HomeController : Controller
     }
 
     public IActionResult ProductoBuscado(string producto)
-    {
+    {       ViewBag.ListaAutos = BD.ObtenerAutos();
+            ViewBag.ListaColores = BD.ObtenerColores();
+            ViewBag.ListaMarcas = BD.ObtenerMarcas();
+            ViewBag.ListaModelos = BD.ObtenerModelos();
+            ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
+            ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
             string productoMinuscula = producto.ToLower();
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
