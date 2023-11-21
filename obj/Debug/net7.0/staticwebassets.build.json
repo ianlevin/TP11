@@ -1,6 +1,14 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "OSDpkD6dcPycnBV5x3EaiEF4fLQ/gOHQa2//K+3elTQ=",
+=======
+<<<<<<< HEAD
+  "Hash": "9vMiTAjaP8HPmFj4J6rOwR4TqABZIMzhMPeYlrax9Tk=",
+=======
+  "Hash": "BMDJJYg5BteDRkMoYtnycwfeeJivq3176jLvoRLUBmA=",
+>>>>>>> 94e9fe6859fac42d65a5efab50a3b25a2345c096
+>>>>>>> 78cba5189cf06cbfd4689ab43f1d9a1be018427b
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -170,7 +178,28 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\amarok.png"
     },
     {
+<<<<<<< HEAD
+      "Identity": "C:\\Users\\47572827\\TP11\\wwwroot\\img-autos\\Autos_logo.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\TP11\\wwwroot\\",
+      "BasePath": "_content/TP11",
+      "RelativePath": "img-autos/Autos_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img-autos\\Autos_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\47572827\\TP11\\wwwroot\\img-autos\\bora.png",
+=======
       "Identity": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\bora.png",
+>>>>>>> 94e9fe6859fac42d65a5efab50a3b25a2345c096
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\",
