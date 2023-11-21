@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\Autos_logo.png",
+      "PackagePath": "staticwebassets\\Autos_logo.png"
+    },
+    {
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\A5.jfif",
+      "PackagePath": "staticwebassets\\img-autos\\A5.jfif"
     },
     {
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\GR86.png",

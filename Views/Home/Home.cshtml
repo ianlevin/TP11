@@ -27,6 +27,7 @@
                 @{
                     for(int i = 0; i<ViewBag.ListaColores.Count; i++){
                         <input type="radio" name="id" value="@ViewBag.ListaColores[i].IdColor">
+                        <p>@ViewBag.ListaColores[i].NombreColor</p>
                     }
                 }
                 <input type="submit" name="filtro" value="color">
