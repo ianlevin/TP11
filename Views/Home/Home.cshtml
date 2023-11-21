@@ -46,11 +46,27 @@
              <input type="submit" name="filtro" value="marca">
             </form>
             <form action='@Url.Action("Filtro")'>
-
+                @{
+                    for(int i = 0; i < ViewBag.ListaDirecciones.Count; i++)
+                    {
+                        <label>
+                            <input type="radio" name="id" value="@ViewBag.ListaDirecciones[i].IdDireccion">
+                            @ViewBag.ListaDirecciones[i].NombreDireccion
+                        </label>
+                    }
+                }
                 <input type="submit" name="filtro" value="direccion">
             </form>
             <form action='@Url.Action("Filtro")'>
-
+                @{
+                    for(int i = 0; i < ViewBag.ListaTransmisiones.Count; i++)
+                    {
+                        <label>
+                            <input type="radio" name="id" value="@ViewBag.ListaTransmisiones[i].IdTransmision">
+                            @ViewBag.ListaTransmisiones[i].NombreTransmision
+                        </label>
+                    }
+                }
                 <input type="submit" name="filtro" value="transmision">
             </form>
         </li>
