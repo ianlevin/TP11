@@ -1,21 +1,40 @@
 <link rel="stylesheet" href="~/css/home.css">
+<div class="home">
+    <ul>
+        <li>
+            @if(ViewBag.ListaAutos != null){
+                <div class="mainAutos">
+                    @{
+                        foreach(Auto auto in @ViewBag.ListaAutos)
+                        {
+                            <div class="card">
+                                <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
+                                <div class="containerCard">
+                                    <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
+                                    <p>Año: @auto.Ano</p>
+                                    <p>Kilometraje: @auto.Kilometraje</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>  
+            }
 
-@if(ViewBag.ListaAutos != null){
-    <div class="mainAutos">
-    @{
-        foreach(Auto auto in @ViewBag.ListaAutos)
-        {
-            <div class="card">
-                <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
-                <div class="containerCard">
-                    <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
-                    <p>Año: @auto.Ano</p>
-                    <p>Kilometraje: @auto.Kilometraje</p>
-                </div>
-            </div>
-        }
-    }
-    </div>
-}
+        </li>
+            
+        <li>
+            <form action='@Url.Action("Filtro")'>
+                @{
+                    for(int i = 0; i<ViewBag.ListaColores.Count; i++){
+                        <input type="radio" name="id" value="@ViewBag.ListaColores[i].IdColor">
+                    }
+                }
+                <input type="submit" name="filtro" value="color">
+            </form>
+        </li>
+    </ul>
+    
+</div>
+
 
 

@@ -33,4 +33,10 @@ body{
 .containerCard {
       padding: 2px 16px;
 }
-
+li{
+      list-style: none;
+}
+ul{
+      display: flex;
+      flex-direction: row;
+}
