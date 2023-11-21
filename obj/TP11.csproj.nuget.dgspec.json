@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\czern\\Desktop\\TP11\\TP11.csproj": {}
+    "C:\\Users\\47572827\\TP11\\TP11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\czern\\Desktop\\TP11\\TP11.csproj": {
+    "C:\\Users\\47572827\\TP11\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\czern\\Desktop\\TP11\\TP11.csproj",
+        "projectUniqueName": "C:\\Users\\47572827\\TP11\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "C:\\Users\\czern\\Desktop\\TP11\\TP11.csproj",
-        "packagesPath": "C:\\Users\\czern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\czern\\Desktop\\TP11\\obj\\",
+        "projectPath": "C:\\Users\\47572827\\TP11\\TP11.csproj",
+        "packagesPath": "C:\\Users\\47572827\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47572827\\TP11\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\czern\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\47572827\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

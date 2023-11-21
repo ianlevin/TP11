@@ -6,7 +6,7 @@
         foreach(Auto auto in @ViewBag.ListaAutos)
         {
             <div class="card">
-                <img src="/wwwroot/img-autos/@auto.Imagen" alt="img" style="width:100%">
+                <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
                 <div class="containerCard">
                     <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
                     <p>Año: @auto.Ano</p>
