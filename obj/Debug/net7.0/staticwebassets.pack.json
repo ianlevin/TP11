@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\Autos_logo.png",
-      "PackagePath": "staticwebassets\\Autos_logo.png"
-    },
-    {
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -25,22 +21,15 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\A5.jfif",
       "PackagePath": "staticwebassets\\img-autos\\A5.jfif"
     },
     {
-=======
-<<<<<<< HEAD
-      "Id": "C:\\Users\\47572827\\TP11\\wwwroot\\img-autos\\Autos_logo.png",
+      "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\Autos_logo.png",
       "PackagePath": "staticwebassets\\img-autos\\Autos_logo.png"
     },
     {
-      "Id": "C:\\Users\\47572827\\TP11\\wwwroot\\img-autos\\GR86.png",
-=======
->>>>>>> 78cba5189cf06cbfd4689ab43f1d9a1be018427b
       "Id": "C:\\Users\\47295402\\Downloads\\TP11\\wwwroot\\img-autos\\GR86.png",
->>>>>>> 94e9fe6859fac42d65a5efab50a3b25a2345c096
       "PackagePath": "staticwebassets\\img-autos\\GR86.png"
     },
     {
