@@ -24,6 +24,8 @@ body{
       padding: 2em;
       width: 20rem;
       height: 22rem;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
 }
     
 .card:hover {
@@ -39,4 +41,5 @@ li{
 ul{
       display: flex;
       flex-direction: row;
+      padding-left: 0%;
 }
