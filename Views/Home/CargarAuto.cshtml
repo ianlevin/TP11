@@ -1,0 +1,42 @@
+<form action='@Url.Action("CargarDatosAuto")'>
+    <input type="text" placeholder="Año de fabricacion" name="Ano" value="" required>
+
+    <input type="text" placeholder="Kilometraje" name="Kilometraje" value="" required>
+
+    <input type="text" placeholder="Matricula" name="Matricula" value="" required>
+
+    <input type="text" placeholder="Cantidad de asientos" name="Asientos" value="" required>
+
+    <input type="text" placeholder="Motor" name="Motor" value="" required>
+
+    <input type="radio" name="AireAcondicionado" value="0" required>no tiene aire </input>
+    <input type="radio" name="AireAcondicionado" value="1" required>tiene aire </input>
+
+    <input type="radio" name="ABS" value="0" required>no tiene ABS </input>
+    <input type="radio" name="ABS" value="1" required>tiene ABS </input>
+
+    <input type="radio" name="Airbag" value="0" required>no tiene Airbag </input>
+    <input type="radio" name="Airbag" value="1" required>tiene Airbag </input>
+
+    <select name="IdColor" type="number" required>
+            @for(int i = 0; i<@ViewBag.ListaColores.Count; i++){
+                <option value="@(i+1)">@ViewBag.ListaColores[i].NombreColor</option>
+            }
+    </select>
+
+    <input type="radio" name="IdTransmision" value="1" required>Transmision Automatica </input>
+    <input type="radio" name="IdTransmision" value="2" required>Transmision manual </input>
+
+    <select name="IdMarca" type="number" required>
+            @for(int i = 0; i<@ViewBag.ListaMarcas.Count; i++){
+                <option value="@(i+1)">@ViewBag.ListaMarcas[i].NombreMarca</option>
+            }
+    </select>
+    <input type="text" name="Imagen" placeholder="Imagen del auto">
+    <select name="IdModelo" type="number" required>
+            @for(int i = 0; i<@ViewBag.ListaModelos.Count; i++){
+                <option value="@(i+1)">@ViewBag.ListaModelos[i].NombreModelo</option>
+            }
+    </select>
+    <input type="text" placeholder="Precio de publicacion" name="Precio" value="">
+</form>

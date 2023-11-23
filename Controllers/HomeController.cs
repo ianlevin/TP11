@@ -114,7 +114,15 @@ public class HomeController : Controller
     }
 
     public IActionResult CargarAuto(){
+        ViewBag.ListaColores = BD.ObtenerColores();
+        ViewBag.ListaMarcas = BD.ObtenerMarcas();
+        ViewBag.ListaModelos = BD.ObtenerModelos();
         return View();
+    }
+
+    public IActionResult CargarDatosAuto(DateTime Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor){
+        
+        return View("Home");
     }
 
     public Object VerInformacionAuto(int idAuto){
