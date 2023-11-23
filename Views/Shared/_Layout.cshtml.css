@@ -36,7 +36,7 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: #fff;
+    color: #000000;
 }
 
 .link a::after{
@@ -46,7 +46,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #eb2929;
     transition: all 0.3s ease;
 }
 
