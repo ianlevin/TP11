@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47490408\\TP11\\TP11.csproj": {}
+    "C:\\Users\\47295402\\Desktop\\TP11\\TP11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47490408\\TP11\\TP11.csproj": {
+    "C:\\Users\\47295402\\Desktop\\TP11\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47490408\\TP11\\TP11.csproj",
+        "projectUniqueName": "C:\\Users\\47295402\\Desktop\\TP11\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "C:\\Users\\47490408\\TP11\\TP11.csproj",
-        "packagesPath": "C:\\Users\\47490408\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47490408\\TP11\\obj\\",
+        "projectPath": "C:\\Users\\47295402\\Desktop\\TP11\\TP11.csproj",
+        "packagesPath": "C:\\Users\\47295402\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47295402\\Desktop\\TP11\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47490408\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47295402\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -118,7 +118,6 @@ public class HomeController : Controller
         return View();
     }
 
-<<<<<<< HEAD
     public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
         var Objeto = new {
@@ -130,10 +129,6 @@ public class HomeController : Controller
             marca = BD.ObtenerMarca(MiAuto.IdMarca)
         };
         return Objeto;
-=======
-    public IActionResult Creditos(){
-        return View("Creditos");
->>>>>>> 3d6521f22cb37574bd8a61693307e8637a687504
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
