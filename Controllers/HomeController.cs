@@ -19,9 +19,8 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
+    public IActionResult Creditos(){
+        return View("Creditos");
     }
 
     public IActionResult SignIn(string Email, string Password)
@@ -51,7 +50,7 @@ public class HomeController : Controller
     }
 
     public IActionResult ProductoBuscado(string producto)
-    {       ViewBag.ListaAutos = BD.ObtenerAutos();
+    {
             ViewBag.ListaColores = BD.ObtenerColores();
             ViewBag.ListaMarcas = BD.ObtenerMarcas();
             ViewBag.ListaModelos = BD.ObtenerModelos();
