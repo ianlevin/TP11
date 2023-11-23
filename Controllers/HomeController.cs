@@ -121,6 +121,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult CargarDatosAuto(DateTime Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor){
+        
+        return View("Home");
+    }
+
     public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
         var Objeto = new {
