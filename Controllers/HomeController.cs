@@ -119,6 +119,19 @@ public class HomeController : Controller
         return View();
     }
 
+    public Object VerInformacionAuto(int idAuto){
+        Auto MiAuto = BD.ObtenerAuto(idAuto); 
+        var Objeto = new {
+            auto = MiAuto,
+            modelo = BD.ObtenerModelo(MiAuto.IdModelo),
+            color = BD.ObtenerColor(MiAuto.IdColor),
+            transmision = BD.ObtenerTransmision(MiAuto.IdTransmision),
+            direccion = BD.ObtenerDireccion(MiAuto.IdDireccion),
+            marca = BD.ObtenerMarca(MiAuto.IdMarca)
+        };
+        return Objeto;
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

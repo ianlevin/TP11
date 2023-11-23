@@ -13,6 +13,7 @@
                                     <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
                                     <p>Año: @auto.Ano</p>
                                     <p>Kilometraje: @auto.Kilometraje</p>
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalInformacion" onclick="masInfo(@auto.IdAuto)">Más info</a>
                                 </div>
                             </div>
                         }
@@ -72,6 +73,39 @@
         </li>
     </ul>
     
+    <div class="modal" tabindex="-1" role="dialog" id="ModalInformacion">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 id="titulo"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ul id="infoAuto">
+                <li id="anio"></li>
+                <li id="km"></li>
+                <li id="matricula"></li>
+                <li id="Asientos"></li>
+                <li id="Motor"></li>
+                <li id="Aire"></li>
+                <li id="ABS"></li>
+                <li id="Airbag"></li>
+                <li id="Color"></li>
+                <li id="Transmision"></li>
+                <li id="Direccion"></li>
+                <li id="Marca"></li>
+                <li id="Modelo"></li>
+                <li id="Precio"></li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
 
 
