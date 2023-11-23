@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1L6EQv9Sqy1/bMeEO39z6Xxb1nG7tRcfEZAA9aXu400=",
+  "Hash": "XT4w/xW0HXA/SG6WgNPl0RUqHjC06qKu3NmxexvKst4=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\creditos.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+      "BasePath": "_content/TP11",
+      "RelativePath": "css/creditos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\creditos.css"
     },
     {
       "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\home.css",
