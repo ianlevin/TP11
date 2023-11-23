@@ -57,23 +57,22 @@ public class HomeController : Controller
             ViewBag.ListaModelos = BD.ObtenerModelos();
             ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
             ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
-            //toto arreglalo puto
-            string productoMinuscula = producto.ToLower();
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
             List<Auto>listaAutos = new List<Auto>();
-
-            for(int i = 0; i<listaModelos.Count; i++){
-                if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                    listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
-                }
+            //Falta arreglar que al buscar un caracter que no existe Ejemplo: "jasjhd" no te devuelta nada, ahora mismo devuelve todos los autos
+            if(producto != null){
+                string productoMinuscula = producto.ToLower();
+                 for(int i = 0; i<listaModelos.Count; i++){
+                    if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                        listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
+                    }
+                ViewBag.buscado = producto;
             }
-            ViewBag.buscado = producto;
-
+            }
             if(listaAutos.Count > 0){
                 ViewBag.ListaAutos = listaAutos;
             }
-
             return View("Home");
     }
     public IActionResult Home()
@@ -119,6 +118,7 @@ public class HomeController : Controller
         return View();
     }
 
+<<<<<<< HEAD
     public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
         var Objeto = new {
@@ -130,6 +130,10 @@ public class HomeController : Controller
             marca = BD.ObtenerMarca(MiAuto.IdMarca)
         };
         return Objeto;
+=======
+    public IActionResult Creditos(){
+        return View("Creditos");
+>>>>>>> 3d6521f22cb37574bd8a61693307e8637a687504
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

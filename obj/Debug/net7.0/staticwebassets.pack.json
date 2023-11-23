@@ -5,7 +5,15 @@
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\47490408\\TP11\\wwwroot\\css\\home.css",
+=======
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\creditos.css",
+      "PackagePath": "staticwebassets\\css\\creditos.css"
+    },
+    {
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\home.css",
+>>>>>>> 3d6521f22cb37574bd8a61693307e8637a687504
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
