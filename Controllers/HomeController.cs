@@ -60,6 +60,7 @@ public class HomeController : Controller
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
             List<Auto>listaAutos = new List<Auto>();
+            //Falta arreglar que al buscar un caracter que no existe Ejemplo: "jasjhd" no te devuelta nada, ahora mismo devuelve todos los autos
             if(producto != null){
                 string productoMinuscula = producto.ToLower();
                  for(int i = 0; i<listaModelos.Count; i++){
