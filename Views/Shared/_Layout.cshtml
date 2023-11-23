@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TP11.styles.css" asp-append-version="true" />
     <ling rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/a076d053999.js"></script>
 </head>
 <body>
     @if(ViewBag.NavBar == null){
@@ -23,8 +24,12 @@
                 <li id="link3" class="link"><a href="#">Vender</a></li>
             </ul>
             <form action='@Url.Action("ProductoBuscado")' class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" name="producto" value="">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <div class=box>
+                    <input type="search" placeholder="Buscar" aria-label="Buscar" name="producto" value="">
+                    <a href='#'>
+                        <i class = "fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
             </form>
         </nav>
     }

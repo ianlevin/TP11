@@ -67,3 +67,28 @@ nav[b-crqzjy7pi9]{
 .btn:hover[b-crqzjy7pi9]{
     background-color: #1e40af;
 }
+.box[b-crqzjy7pi9]{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input[b-crqzjy7pi9]{
+    width: 400px;
+}
+.box input[b-crqzjy7pi9]{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fas[b-crqzjy7pi9]{
+    color: #1daf;
+    font-size: 18px;
+}
