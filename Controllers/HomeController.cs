@@ -57,6 +57,7 @@ public class HomeController : Controller
             ViewBag.ListaModelos = BD.ObtenerModelos();
             ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
             ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
+            //toto arreglalo puto
             string productoMinuscula = producto.ToLower();
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
