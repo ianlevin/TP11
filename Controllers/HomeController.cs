@@ -57,23 +57,21 @@ public class HomeController : Controller
             ViewBag.ListaModelos = BD.ObtenerModelos();
             ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
             ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
-            //toto arreglalo puto
-            string productoMinuscula = producto.ToLower();
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
             List<Auto>listaAutos = new List<Auto>();
-
-            for(int i = 0; i<listaModelos.Count; i++){
-                if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                    listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
-                }
+            if(producto != null){
+                string productoMinuscula = producto.ToLower();
+                 for(int i = 0; i<listaModelos.Count; i++){
+                    if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
+                        listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
+                    }
+                ViewBag.buscado = producto;
             }
-            ViewBag.buscado = producto;
-
+            }
             if(listaAutos.Count > 0){
                 ViewBag.ListaAutos = listaAutos;
             }
-
             return View("Home");
     }
     public IActionResult Home()
