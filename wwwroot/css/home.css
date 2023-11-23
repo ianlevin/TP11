@@ -43,3 +43,8 @@ ul{
       flex-direction: row;
       padding-left: 0%;
 }
+
+#infoAuto{
+      display: flex;
+      flex-direction: column;
+}

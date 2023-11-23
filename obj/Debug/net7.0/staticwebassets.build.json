@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "BE1v/tKGxLUqzHzib0hfSN40nc7HyJpqmj/u2HRfgXs=",
-=======
-  "Hash": "XT4w/xW0HXA/SG6WgNPl0RUqHjC06qKu3NmxexvKst4=",
->>>>>>> 3d6521f22cb37574bd8a61693307e8637a687504
+  "Hash": "hz+yUTBpEBcqelmuHlXsmZIQPA/VBiv6UzucCwGOkjQ=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -55,13 +51,10 @@
       "OriginalItemSpec": "C:\\Users\\47490408\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47490408\\TP11\\wwwroot\\css\\home.css",
-=======
-      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\creditos.css",
+      "Identity": "C:\\Users\\47490408\\TP11\\wwwroot\\css\\creditos.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\47490408\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "css/creditos.css",
       "AssetKind": "All",
@@ -75,8 +68,7 @@
       "OriginalItemSpec": "wwwroot\\css\\creditos.css"
     },
     {
-      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\home.css",
->>>>>>> 3d6521f22cb37574bd8a61693307e8637a687504
+      "Identity": "C:\\Users\\47490408\\TP11\\wwwroot\\css\\home.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47490408\\TP11\\wwwroot\\",
