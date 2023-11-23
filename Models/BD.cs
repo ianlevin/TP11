@@ -71,7 +71,49 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerColor(int idColor){
+    public static Color ObtenerColor(int idColor){
+        Color user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Color WHERE IdColor = @idCo";
+            user = db.QueryFirstOrDefault<Color>(sql, new {idCo = idColor});
+        }
+        return user;
+    }
+    public static Marca ObtenerMarca(int idMarca){
+        Marca user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Marca WHERE IdMarca = @idMa";
+            user = db.QueryFirstOrDefault<Marca>(sql, new {idMa = idMarca});
+        }
+        return user;
+    }
+    public static Modelo ObtenerModelo(int idModelo){
+        Modelo user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Modelo WHERE IdModelo = @idMo";
+            user = db.QueryFirstOrDefault<Modelo>(sql, new {idMo = idModelo});
+        }
+        return user;
+    }
+    public static Direccion ObtenerDireccion(int idDireccion){
+        Direccion user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Direccion WHERE IdDireccion = @idDi";
+            user = db.QueryFirstOrDefault<Direccion>(sql, new {idDi = idDireccion});
+        }
+        return user;
+    }
+    public static Transmision ObtenerTransmision(int idTransmision){
+        Transmision user;
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Transmision WHERE IdTransmision = @idTr";
+            user = db.QueryFirstOrDefault<Transmision>(sql, new {idTr = idTransmision});
+        }
+        return user;
+    }
+
+    /*Filtro*/
+    public static List<Auto> ObtenerAutoXColor(int idColor){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdColor = @idCol";
@@ -79,7 +121,7 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerDireccion(int idDireccion){
+    public static List<Auto> ObtenerAutoXDireccion(int idDireccion){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdDireccion = @idDir";
@@ -87,7 +129,7 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerMarca(int idMarca){
+    public static List<Auto> ObtenerAutoXMarca(int idMarca){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdMarca = @idMar";
@@ -95,7 +137,7 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerModelo(int idModelo){
+    public static List<Auto> ObtenerAutoXModelo(int idModelo){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdModelo = @idMod";
@@ -103,7 +145,7 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerTransmision(int idTransmision){
+    public static List<Auto> ObtenerAutoXTransmision(int idTransmision){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdTransmision = @idTran";
@@ -121,6 +163,7 @@ public static class BD{
         return nombreModelo;
     }
 
+    /*Creacion y verificacion*/
     public static void CrearAuto(Auto nuevoAuto){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "INSERT INTO Auto(Ano, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio) VALUES (pAño, pKilometraje, pMatricula, pDisponible, pAsientos, pMotor, pAireAcondicionado, pABS, pAirbag, pIdColor, pIdTransmision, pIdDireccion, pIdMarca, pIdUsuario, pImagen, pIdModelo, pPrecio)";

@@ -1,4 +1,4 @@
-﻿function masInfo(id){
+﻿function MostrarAuto(id){
 $.ajax(
     {
         type: 'POST',
@@ -9,20 +9,19 @@ $.ajax(
         function (response){
             console.log(response);
             $("#titulo").html(response.modelo.nombreModelo);
-            $("#anio").html(response.auto.ano);
-            $("#km").html(response.auto.kilometraje);
-            $("#matricula").html(response.auto.matricula);
-            $("#Asientos").html(response.auto.Asientos);
-            $("#Motor").html(response.auto.Motor);
-            $("#Aire").html(response.auto.AireAcondicionado);
-            $("#ABS").html(response.auto.ABS);
-            $("#Airbag").html(response.auto.Airbag);
-            $("#Color").html(response.color.NombreColor);
-            $("#Transmision").html(response.transmision.NombreTransmision);
-            $("#Direccion").html(response.direccion.NombreDireccion);
-            $("#Marca").html(response.marca.NombreMarca);
-            $("#Modelo").html(response.modelo.NombreModelo);
-            $("#Precio").html(response.auto.Precio);
+            $("#anio").html("Año: "+response.auto.ano);
+            $("#km").html("Kilometraje: "+response.auto.kilometraje+"km");
+            $("#matricula").html("Matricula: "+response.auto.matricula);
+            $("#Asientos").html("Asientos: "+response.auto.Asientos);
+            $("#Motor").html("Motor: "+response.auto.Motor);
+            $("#Aire").html("Aire acondicionado: "+response.auto.AireAcondicionado);
+            $("#ABS").html("ABS: "+response.auto.ABS);
+            $("#Airbag").html("Airbag: "+response.auto.Airbag);
+            $("#Color").html("Color: "+response.color.NombreColor);
+            $("#Transmision").html("Transmision: "+response.transmision.NombreTransmision);
+            $("#Direccion").html("Direccion: "+response.direccion.NombreDireccion);
+            $("#Marca").html("Marca: "+response.marca.NombreMarca);
+            $("#Precio").html("$"+response.auto.Precio);
         }
     }
 )

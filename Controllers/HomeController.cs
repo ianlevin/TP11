@@ -65,7 +65,7 @@ public class HomeController : Controller
                 string productoMinuscula = producto.ToLower();
                  for(int i = 0; i<listaModelos.Count; i++){
                     if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                        listaAutos.AddRange(BD.ObtenerModelo(listaModelos[i].IdModelo));
+                        listaAutos.AddRange(BD.ObtenerAutoXModelo(listaModelos[i].IdModelo));
                     }
                 ViewBag.buscado = producto;
             }
@@ -96,25 +96,28 @@ public class HomeController : Controller
         List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
             case "color":
-                ViewBag.ListaAutos = BD.ObtenerColor(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id); 
                 break;
             case "marca":
-                ViewBag.ListaAutos = BD.ObtenerMarca(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 
                 break;
             case "modelo":
-                ViewBag.ListaAutos = BD.ObtenerModelo(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id); 
                 break;
             case "direccion":
-                ViewBag.ListaAutos = BD.ObtenerDireccion(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id); 
                 break;
             case "transmision":
-                ViewBag.ListaAutos = BD.ObtenerTransmision(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id); 
                 break;
         }
         return View("Home");
     }
 
     public IActionResult CargarAuto(){
+        ViewBag.ListaColores = BD.ObtenerColores();
+        ViewBag.ListaMarcas = BD.ObtenerMarcas();
+        ViewBag.ListaModelos = BD.ObtenerModelos();
         return View();
     }
 
