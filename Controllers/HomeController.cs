@@ -118,6 +118,10 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Creditos(){
+        return View("Creditos");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
