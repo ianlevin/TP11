@@ -269,6 +269,22 @@
       "PackagePath": "staticwebassets\\img-autos\\yaris.png"
     },
     {
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\ian.png",
+      "PackagePath": "staticwebassets\\img-creditos\\ian.png"
+    },
+    {
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\lucas.png",
+      "PackagePath": "staticwebassets\\img-creditos\\lucas.png"
+    },
+    {
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\marco.png",
+      "PackagePath": "staticwebassets\\img-creditos\\marco.png"
+    },
+    {
+      "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\tomas.png",
+      "PackagePath": "staticwebassets\\img-creditos\\tomas.png"
+    },
+    {
       "Id": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
