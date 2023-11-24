@@ -28,6 +28,7 @@ public class HomeController : Controller
         ViewBag.NavBar = ",";
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
+        TempData["UserEmail"] = User.Email;
         if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
@@ -43,10 +44,22 @@ public class HomeController : Controller
             return View("Index");
         }else{
             Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
+            TempData["UserEmail"] = user.Email;
             BD.CrearUsuario(user);
             return RedirectToAction("Home");
         }
         
+    }
+    public IActionResult Usuario(){
+        string userEmail = TempData["UserEmail"] as string;
+        Usuario UserActual = BD.ObtenerUsuario(userEmail);
+        ViewBag.nombreUsuario = UserActual.NombreUsuario;
+        ViewBag.telefono = UserActual.Telefono;
+        ViewBag.email = UserActual.Email;
+        ViewBag.direccion = UserActual.Direccion;
+        ViewBag.fechaN = UserActual.FechaNacimiento;
+        ViewBag.admin = UserActual.Admin;
+        return View("Usuario");
     }
 
     public IActionResult ProductoBuscado(string producto)
