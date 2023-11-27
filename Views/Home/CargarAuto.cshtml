@@ -1,42 +1,110 @@
-<form action='@Url.Action("CargarDatosAuto")'>
-    <input type="text" placeholder="Año de fabricacion" name="Ano" value="" required>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <form action='@Url.Action("CargarDatosAuto")' class="container">
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Año de fabricación" name="Ano" value="" required>
+        </div>
 
-    <input type="text" placeholder="Kilometraje" name="Kilometraje" value="" required>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Kilometraje" name="Kilometraje" value="" required>
+        </div>
 
-    <input type="text" placeholder="Matricula" name="Matricula" value="" required>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Matricula" name="Matricula" value="" required>
+        </div>
 
-    <input type="text" placeholder="Cantidad de asientos" name="Asientos" value="" required>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Cantidad de asientos" name="Asientos" value="" required>
+        </div>
 
-    <input type="text" placeholder="Motor" name="Motor" value="" required>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Motor" name="Motor" value="" required>
+        </div>
 
-    <input type="radio" name="AireAcondicionado" value="0" required>no tiene aire </input>
-    <input type="radio" name="AireAcondicionado" value="1" required>tiene aire </input>
+        <div class="form-group mb-3">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="AireAcondicionado" value="0" required>
+                <label class="form-check-label">No tiene aire</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="AireAcondicionado" value="1" required>
+                <label class="form-check-label">Tiene aire</label>
+            </div>
+        </div>
 
-    <input type="radio" name="ABS" value="0" required>no tiene ABS </input>
-    <input type="radio" name="ABS" value="1" required>tiene ABS </input>
+        <div class="form-group mb-3">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="ABS" value="0" required>
+                <label class="form-check-label">No tiene ABS</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="ABS" value="1" required>
+                <label class="form-check-label">Tiene ABS</label>
+            </div>
+        </div>
 
-    <input type="radio" name="Airbag" value="0" required>no tiene Airbag </input>
-    <input type="radio" name="Airbag" value="1" required>tiene Airbag </input>
+        <div class="form-group mb-3">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="Airbag" value="0" required>
+                <label class="form-check-label">No tiene Airbag</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="Airbag" value="1" required>
+                <label class="form-check-label">Tiene Airbag</label>
+            </div>
+        </div>
 
-    <select name="IdColor" type="number" required>
-            @for(int i = 0; i<@ViewBag.ListaColores.Count; i++){
-                <option value="@(i+1)">@ViewBag.ListaColores[i].NombreColor</option>
-            }
-    </select>
+        <div class="form-group mb-3">
+            <select class="form-control" name="IdColor" type="number" placeholder="Color" required>
+                <option value="" disabled selected>Color</option>
+                @for(int i = 0; i<@ViewBag.ListaColores.Count; i++){
+                    <option value="@(i+1)">@ViewBag.ListaColores[i].NombreColor</option>
+                }
+            </select>
+        </div>
 
-    <input type="radio" name="IdTransmision" value="1" required>Transmision Automatica </input>
-    <input type="radio" name="IdTransmision" value="2" required>Transmision manual </input>
+        <div class="form-group mb-3">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="IdTransmision" value="1" required>
+                <label class="form-check-label">Transmisión Automática</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="IdTransmision" value="2" required>
+                <label class="form-check-label">Transmisión Manual</label>
+            </div>
+        </div>
 
-    <select name="IdMarca" type="number" required>
-            @for(int i = 0; i<@ViewBag.ListaMarcas.Count; i++){
-                <option value="@(i+1)">@ViewBag.ListaMarcas[i].NombreMarca</option>
-            }
-    </select>
-    <input type="text" name="Imagen" placeholder="Imagen del auto">
-    <select name="IdModelo" type="number" required>
-            @for(int i = 0; i<@ViewBag.ListaModelos.Count; i++){
-                <option value="@(i+1)">@ViewBag.ListaModelos[i].NombreModelo</option>
-            }
-    </select>
-    <input type="text" placeholder="Precio de publicacion" name="Precio" value="">
-</form>
+        <div class="form-group mb-3">
+            <select class="form-control" name="IdMarca" type="number" required>
+                <option value="" disabled selected>Marca</option>
+                @for(int i = 0; i<@ViewBag.ListaMarcas.Count; i++){
+                    <option value="@(i+1)">@ViewBag.ListaMarcas[i].NombreMarca</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" name="Imagen" placeholder="Imagen del auto">
+        </div>
+
+        <div class="form-group mb-3">
+            <select class="form-control" name="IdModelo" type="number" required>
+                <option value="" disabled selected>Modelo</option>
+                @for(int i = 0; i<@ViewBag.ListaModelos.Count; i++){
+                    <option value="@(i+1)">@ViewBag.ListaModelos[i].NombreModelo</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Precio de publicación" name="Precio" value="">
+        </div>
+
+        <div class="form-group text-center mb-3">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+</body>
+
