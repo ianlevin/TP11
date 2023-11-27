@@ -133,9 +133,10 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult CargarDatosAuto(DateTime Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor){
-        
-        return View("Home");
+    public IActionResult CargarDatosAuto(int Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor, int IdTransmision, int IdDireccion, int IdMarca, string Imagen, int IdModelo, int Precio, int IdUsuario){
+        Auto auto = new Auto(0,Ano, Kilometraje, Matricula, true, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio);
+        BD.CrearAuto(auto);
+        return RedirectToAction("Home");
     }
 
     public Object VerInformacionAuto(int idAuto){

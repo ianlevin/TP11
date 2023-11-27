@@ -25,33 +25,33 @@
 
         <div class="form-group mb-3">
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="0" required>
+                <input type="radio" class="form-check-input" name="AireAcondicionado" value="false" required>
                 <label class="form-check-label">No tiene aire</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="1" required>
+                <input type="radio" class="form-check-input" name="AireAcondicionado" value="true" required>
                 <label class="form-check-label">Tiene aire</label>
             </div>
         </div>
 
         <div class="form-group mb-3">
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="0" required>
+                <input type="radio" class="form-check-input" name="ABS" value="false" required>
                 <label class="form-check-label">No tiene ABS</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="1" required>
+                <input type="radio" class="form-check-input" name="ABS" value="true" required>
                 <label class="form-check-label">Tiene ABS</label>
             </div>
         </div>
 
         <div class="form-group mb-3">
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="0" required>
+                <input type="radio" class="form-check-input" name="Airbag" value="false" required>
                 <label class="form-check-label">No tiene Airbag</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="1" required>
+                <input type="radio" class="form-check-input" name="Airbag" value="true" required>
                 <label class="form-check-label">Tiene Airbag</label>
             </div>
         </div>
@@ -73,6 +73,17 @@
             <div class="form-check">
                 <input type="radio" class="form-check-input" name="IdTransmision" value="2" required>
                 <label class="form-check-label">Transmisión Manual</label>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="IdDireccion" value="1" required>
+                <label class="form-check-label">Direccion hidraulica</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="IdDireccion" value="2" required>
+                <label class="form-check-label">Direccion electrica</label>
             </div>
         </div>
 
@@ -101,6 +112,8 @@
         <div class="form-group mb-3">
             <input type="text" class="form-control" placeholder="Precio de publicación" name="Precio" value="">
         </div>
+
+        <input type="hidden" name="Idusuario" value="1">
 
         <div class="form-group text-center mb-3">
             <button type="submit" class="btn btn-primary">Enviar</button>
