@@ -130,6 +130,9 @@ public class HomeController : Controller
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
+        string userEmail = TempData["UserEmail"] as string;
+        Usuario UserActual = BD.ObtenerUsuario(userEmail);
+        ViewBag.IdUsuario = UserActual.IdUsuario;
         return View();
     }
 
