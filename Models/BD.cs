@@ -8,7 +8,7 @@ public static class BD{
     public static List<Auto> ObtenerAutos(){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "SELECT * FROM Auto";
+            string sql = "sp_ObtenerAutos";
             user = db.Query<Auto>(sql).ToList();
         }
         return user;
