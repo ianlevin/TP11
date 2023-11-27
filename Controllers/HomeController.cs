@@ -33,7 +33,9 @@ public class HomeController : Controller
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
         }
-        return RedirectToAction("Home");
+        Usuario a = BD.ObtenerUsuario(Email);
+        int ID = a.IdUsuario;
+        return RedirectToAction("Home", new {IdUsuario = ID});
         
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
@@ -46,13 +48,13 @@ public class HomeController : Controller
             Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
             TempData["UserEmail"] = user.Email;
             BD.CrearUsuario(user);
-            return RedirectToAction("Home");
+            Usuario a = BD.ObtenerUsuario(email);
+            int ID = a.IdUsuario;
+            return RedirectToAction("Home", new {IdUsuario = ID});
         }
         
     }
-    public IActionResult Usuario(){
-        string userEmail = TempData["UserEmail"] as string;
-        Usuario UserActual = BD.ObtenerUsuario(userEmail);
+    public IActionResult Usuario(Usuario UserActual){
         ViewBag.nombreUsuario = UserActual.NombreUsuario;
         ViewBag.telefono = UserActual.Telefono;
         ViewBag.email = UserActual.Email;
@@ -72,7 +74,7 @@ public class HomeController : Controller
             List<Modelo>listaModelos = new List<Modelo>();
             listaModelos = BD.ObtenerModelos();
             List<Auto>listaAutos = new List<Auto>();
-            //Falta arreglar que al buscar un caracter que no existe Ejemplo: "jasjhd" no te devuelta nada, ahora mismo devuelve todos los autos
+        
             if(producto != null){
                 string productoMinuscula = producto.ToLower();
                  for(int i = 0; i<listaModelos.Count; i++){
@@ -87,7 +89,7 @@ public class HomeController : Controller
             }
             return View("Home");
     }
-    public IActionResult Home()
+    public IActionResult Home(int IdUsuario)
     {   
         ViewBag.ListaAutos = BD.ObtenerAutos();
         ViewBag.ListaColores = BD.ObtenerColores();
@@ -95,6 +97,7 @@ public class HomeController : Controller
         ViewBag.ListaModelos = BD.ObtenerModelos();
         ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
         ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
+        ViewBag.IdUsuario = IdUsuario;
 
         return View();
     }
@@ -126,13 +129,11 @@ public class HomeController : Controller
         return View("Home");
     }
 
-    public IActionResult CargarAuto(){
+    public IActionResult CargarAuto(int IdUsuario){
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
-        string userEmail = TempData["UserEmail"] as string;
-        Usuario UserActual = BD.ObtenerUsuario(userEmail);
-        ViewBag.IdUsuario = UserActual.IdUsuario;
+        ViewBag.IdUsuario = IdUsuario;
         return View();
     }
 
