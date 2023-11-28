@@ -161,8 +161,8 @@ public class HomeController : Controller
         };
         return Objeto;
     }
-    public IActionResult ActualizarAuto(string matricula){
-        BD.ActualizarAuto(matricula);
+    public IActionResult ActualizarAuto(int idAuto){
+        BD.ActualizarAuto(idAuto);
         return RedirectToAction("Home");
     }
 

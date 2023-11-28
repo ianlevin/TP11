@@ -120,11 +120,11 @@ public static class BD{
         }
         return user;
     }
-    public static void ActualizarAuto(string matricula){
+    public static void ActualizarAuto(int IdAuto){
         Auto user;
         using(SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "UPDATE Autos SET Disponibilidad = False WHERE Matricula = @matr";
-            user = db.QueryFirstOrDefault<Auto>(sql, new {matr = matricula});
+            string sql = "UPDATE Autos SET Disponibilidad = False WHERE IdAuto = @id";
+            user = db.QueryFirstOrDefault<Auto>(sql, new {id = IdAuto});
         }
     }
 
