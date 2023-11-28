@@ -7,7 +7,8 @@ $.ajax(
         data: {IdAuto: id},
         success:
         function (response){
-            $("#imagen").attr("src", response.auto.urlImagen);
+            $("#imagen").attr("src", "/img-autos/"+response.auto.imagen);
+            console.log("URL de la imagen:", response.auto.imagen);
             $("#titulo").html(response.modelo.nombreModelo);
             $("#anio").html("Año: "+response.auto.ano);
             $("#km").html("Kilometraje: "+response.auto.kilometraje+"km");
@@ -40,4 +41,4 @@ $.ajax(
         }
     }
 )
-}
+} 
