@@ -33,9 +33,7 @@ public class HomeController : Controller
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
         }
-        Usuario a = BD.ObtenerUsuario(Email);
-        int ID = a.IdUsuario;
-        return RedirectToAction("Home", new {IdUsuario = ID});
+        return RedirectToAction("Home");
         
     }
     public IActionResult SignUp(string nombre, string email, string contrasena, string telefono)
@@ -48,19 +46,20 @@ public class HomeController : Controller
             Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
             TempData["UserEmail"] = user.Email;
             BD.CrearUsuario(user);
-            Usuario a = BD.ObtenerUsuario(email);
-            int ID = a.IdUsuario;
-            return RedirectToAction("Home", new {IdUsuario = ID});
+            return RedirectToAction("Home");
         }
         
     }
-    public IActionResult Usuario(Usuario UserActual){
+    public IActionResult MostrarUsuario(){
+        string e = TempData["UserEmail"].ToString();
+        Usuario UserActual = BD.ObtenerUsuario(e);
         ViewBag.nombreUsuario = UserActual.NombreUsuario;
         ViewBag.telefono = UserActual.Telefono;
         ViewBag.email = UserActual.Email;
         ViewBag.direccion = UserActual.Direccion;
         ViewBag.fechaN = UserActual.FechaNacimiento;
         ViewBag.admin = UserActual.Admin;
+        TempData["UserEmail"] = e;
         return View("Usuario");
     }
 
@@ -89,15 +88,16 @@ public class HomeController : Controller
             }
             return View("Home");
     }
-    public IActionResult Home(int IdUsuario)
+    public IActionResult Home()
     {   
+        string e = TempData["UserEmail"].ToString();
+        TempData["UserEmail"] = e;
         ViewBag.ListaAutos = BD.ObtenerAutos();
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
         ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
         ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
-        ViewBag.IdUsuario = IdUsuario;
 
         return View();
     }
