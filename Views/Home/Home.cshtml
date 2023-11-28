@@ -76,7 +76,7 @@
                                 <p>Año: @auto.Ano</p>
                                 <p>Kilometraje: @auto.Kilometraje km</p>
                                 <a href="#" id="botonModal" class="btn btn-primary" data-toggle="modal" data-target="#ModalInformacion" onclick="MostrarAuto(@auto.IdAuto)">Más info</a>
-                                <button type="submit" class="btn btn-primary" data-dismiss="modal" id="ComprarBoton" onclick="actualizarAuto(@auto.IdAuto)">Comprar</button>
+                                <a type="submit" class="btn btn-primary" data-dismiss="modal" id="ComprarBoton" href='@Url.Action("ActualizarAuto", new{idAuto = @auto.IdAuto})'>Comprar</a>
                             </div>
                     </div>
                     }

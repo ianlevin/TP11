@@ -2,7 +2,7 @@ using System.Data.SqlClient;
 using Dapper;
 
 public static class BD{
-    private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BDAutosAlRio;Trusted_Connection=True;";
+    private static string ConnectionString {get; set;} = @"Server=DESKTOP-5VP95V6\SQLEXPRESS;DataBase=BDAutosAlRio;Trusted_Connection=True;";
 
     /*Listas*/
     public static List<Auto> ObtenerAutos(){
@@ -121,10 +121,9 @@ public static class BD{
         return user;
     }
     public static void ActualizarAuto(int IdAuto){
-        Auto user;
         using(SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "UPDATE Auto SET Disponible = 0 WHERE IdAuto = @id";
-            user = db.QueryFirstOrDefault<Auto>(sql, new {id = IdAuto});
+            db.Execute(sql, new {id = IdAuto});
         }
     }
 

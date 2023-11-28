@@ -42,18 +42,3 @@ $.ajax(
     }
 )
 } 
-
-function actualizarAuto(id){
-    $.ajax(
-        {
-            type: 'POST',
-            dataType: 'JSON',
-            url: '/Home/ActualizarAuto',
-            data: {IdAuto: id},
-            success:
-            function (response){
-                console.log("Eliminado con Exito")
-            }
-        }
-    )
-}
