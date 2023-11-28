@@ -74,3 +74,39 @@ ul{
       display: flex;
       flex-direction: column;
 }
+
+.btn-enviar {   
+      background-color: rgb(224, 104, 134); 
+      color: #fff; 
+      padding: 10px 20px; 
+      font-size: 12px; 
+      border: none;
+      border-radius: 5px; 
+      cursor: pointer;
+}
+      
+.btn-enviar:hover {
+      background-color: rgb(223, 71, 109);
+}
+      
+.select1{
+      background-color: rgb(224, 104, 134); 
+      color: #fff;
+      font-size: 12px; 
+      padding: 10px 20px; 
+      border: none;
+      border-radius: 5px; 
+      cursor: pointer;
+}
+      
+.seleccionadores1 {
+      display: inline;
+      background-color: rgb(224, 104, 134); 
+      color: #fff;
+      font-size: 12px; 
+      padding: 10px 20px; 
+      margin-right: 5px;
+      border: none;
+      border-radius: 5px; 
+      cursor: pointer;
+}
