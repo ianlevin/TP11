@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "A6gc2cniWJrqIKJsCv7ko+Q6qQCFJN7h3njwDTGo8zk=",
+=======
+  "Hash": "p5DGUDDsO+7/CqA+8oLwX1JFaYvKWoUrGaC/ckc4TRU=",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "TP11\\wwwroot",
       "Source": "TP11",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11.styles.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11.styles.css",
+      "SourceId": "TP11",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.styles.css",
       "AssetKind": "All",
@@ -31,6 +46,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\47569637\\Desktop\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11.styles.css"
     },
     {
@@ -38,6 +54,15 @@
       "SourceId": "TP11",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "SourceId": "TP11",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.bundle.scp.css",
       "AssetKind": "All",
@@ -48,6 +73,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\47569637\\Desktop\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
     },
     {
@@ -55,6 +81,15 @@
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\47572827\\Downloads\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\creditos.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "css/creditos.css",
       "AssetKind": "All",
@@ -68,10 +103,17 @@
       "OriginalItemSpec": "wwwroot\\css\\creditos.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\css\\home.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\home.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -85,10 +127,17 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\css\\login.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\login.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -102,10 +151,17 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\css\\site.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\css\\site.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -119,10 +175,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\favicon.ico",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\favicon.ico",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -136,10 +199,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\A5.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\A5.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/A5.jfif",
       "AssetKind": "All",
@@ -153,10 +223,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\A5.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\amarok.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\amarok.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/amarok.png",
       "AssetKind": "All",
@@ -170,10 +247,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\amarok.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\Autos_logo.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\Autos_logo.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/Autos_logo.png",
       "AssetKind": "All",
@@ -187,10 +271,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\Autos_logo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\bora.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\bora.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/bora.png",
       "AssetKind": "All",
@@ -204,10 +295,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\bora.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\bronco.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\bronco.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/bronco.png",
       "AssetKind": "All",
@@ -221,10 +319,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\bronco.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\camaro.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\camaro.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/camaro.jfif",
       "AssetKind": "All",
@@ -238,10 +343,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\camaro.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\commander.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\commander.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/commander.png",
       "AssetKind": "All",
@@ -255,10 +367,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\commander.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\compass.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\compass.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/compass.png",
       "AssetKind": "All",
@@ -272,10 +391,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\compass.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\corolla-cross.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\corolla-cross.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/corolla-cross.png",
       "AssetKind": "All",
@@ -289,10 +415,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\corolla-cross.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\corolla-sport.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\corolla-sport.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/corolla-sport.png",
       "AssetKind": "All",
@@ -306,10 +439,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\corolla-sport.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\cronos.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\cronos.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/cronos.png",
       "AssetKind": "All",
@@ -323,10 +463,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\cronos.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\cruze-rs.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\cruze-rs.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/cruze-rs.png",
       "AssetKind": "All",
@@ -340,10 +487,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\cruze-rs.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\duster.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\duster.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/duster.png",
       "AssetKind": "All",
@@ -357,10 +511,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\duster.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\equinox.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\equinox.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/equinox.jfif",
       "AssetKind": "All",
@@ -374,10 +535,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\equinox.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\etios.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\etios.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/etios.png",
       "AssetKind": "All",
@@ -391,10 +559,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\etios.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\f150-raptor.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\f150-raptor.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/f150-raptor.png",
       "AssetKind": "All",
@@ -408,10 +583,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\f150-raptor.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\gladiator.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\gladiator.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/gladiator.png",
       "AssetKind": "All",
@@ -425,10 +607,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\gladiator.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\GR86.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\GR86.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/GR86.png",
       "AssetKind": "All",
@@ -442,10 +631,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\GR86.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\grand-cherokee.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\grand-cherokee.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/grand-cherokee.png",
       "AssetKind": "All",
@@ -459,10 +655,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\grand-cherokee.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\hilux.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\hilux.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/hilux.png",
       "AssetKind": "All",
@@ -476,10 +679,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\hilux.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\Kangoo.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\Kangoo.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/Kangoo.png",
       "AssetKind": "All",
@@ -493,10 +703,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\Kangoo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\koleos.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\koleos.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/koleos.png",
       "AssetKind": "All",
@@ -510,10 +727,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\koleos.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\kuga.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\kuga.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/kuga.png",
       "AssetKind": "All",
@@ -527,10 +751,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\kuga.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\logan.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\logan.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/logan.png",
       "AssetKind": "All",
@@ -544,10 +775,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\logan.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\maverick.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\maverick.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/maverick.png",
       "AssetKind": "All",
@@ -561,10 +799,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\maverick.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\montana.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\montana.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/montana.jfif",
       "AssetKind": "All",
@@ -578,10 +823,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\montana.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\mustang.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\mustang.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/mustang.png",
       "AssetKind": "All",
@@ -595,10 +847,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\mustang.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\nivus.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\nivus.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/nivus.png",
       "AssetKind": "All",
@@ -612,10 +871,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\nivus.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\onix.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\onix.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/onix.png",
       "AssetKind": "All",
@@ -629,10 +895,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\onix.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\polo.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\polo.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/polo.png",
       "AssetKind": "All",
@@ -646,10 +919,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\polo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\pulse.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\pulse.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/pulse.png",
       "AssetKind": "All",
@@ -663,10 +943,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\pulse.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\ranger-raptor.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\ranger-raptor.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/ranger-raptor.png",
       "AssetKind": "All",
@@ -680,10 +967,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\ranger-raptor.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\raptor.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\raptor.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/raptor.png",
       "AssetKind": "All",
@@ -697,10 +991,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\raptor.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\rav-4.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\rav-4.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/rav-4.png",
       "AssetKind": "All",
@@ -714,10 +1015,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\rav-4.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\renegade.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\renegade.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/renegade.png",
       "AssetKind": "All",
@@ -731,10 +1039,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\renegade.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\s10.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\s10.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/s10.jfif",
       "AssetKind": "All",
@@ -748,10 +1063,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\s10.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\sandero-rs.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\sandero-rs.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/sandero-rs.png",
       "AssetKind": "All",
@@ -765,10 +1087,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\sandero-rs.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\saveiro.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\saveiro.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/saveiro.png",
       "AssetKind": "All",
@@ -782,10 +1111,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\saveiro.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\serie7.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\serie7.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/serie7.png",
       "AssetKind": "All",
@@ -799,10 +1135,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\serie7.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\serie8.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\serie8.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/serie8.png",
       "AssetKind": "All",
@@ -816,10 +1159,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\serie8.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\stepway.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\stepway.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/stepway.jfif",
       "AssetKind": "All",
@@ -833,10 +1183,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\stepway.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\strada.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\strada.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/strada.png",
       "AssetKind": "All",
@@ -850,10 +1207,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\strada.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\sw4.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\sw4.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/sw4.png",
       "AssetKind": "All",
@@ -867,10 +1231,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\sw4.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\T-Cross.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\T-Cross.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/T-Cross.png",
       "AssetKind": "All",
@@ -884,10 +1255,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\T-Cross.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\taos.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\taos.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/taos.jfif",
       "AssetKind": "All",
@@ -901,10 +1279,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\taos.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\territory.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\territory.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/territory.png",
       "AssetKind": "All",
@@ -918,10 +1303,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\territory.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\Tiguan.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\Tiguan.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/Tiguan.png",
       "AssetKind": "All",
@@ -935,10 +1327,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\Tiguan.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\toro.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\toro.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/toro.png",
       "AssetKind": "All",
@@ -952,10 +1351,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\toro.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\tracker.jfif",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\tracker.jfif",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/tracker.jfif",
       "AssetKind": "All",
@@ -969,10 +1375,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\tracker.jfif"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\transit.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\transit.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/transit.png",
       "AssetKind": "All",
@@ -986,10 +1399,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\transit.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\vento.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\vento.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/vento.png",
       "AssetKind": "All",
@@ -1003,10 +1423,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\vento.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\virtus.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\virtus.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/virtus.png",
       "AssetKind": "All",
@@ -1020,10 +1447,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\virtus.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\wrangler.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\wrangler.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/wrangler.png",
       "AssetKind": "All",
@@ -1037,10 +1471,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\wrangler.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x1.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x1.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x1.png",
       "AssetKind": "All",
@@ -1054,10 +1495,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x1.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x2.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x2.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x2.png",
       "AssetKind": "All",
@@ -1071,10 +1519,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x2.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x3.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x3.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x3.png",
       "AssetKind": "All",
@@ -1088,10 +1543,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x3.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x4.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x4.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x4.png",
       "AssetKind": "All",
@@ -1105,10 +1567,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x4.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x5.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x5.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x5.png",
       "AssetKind": "All",
@@ -1122,10 +1591,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x5.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\x6.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\x6.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/x6.png",
       "AssetKind": "All",
@@ -1139,10 +1615,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\x6.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\yaris-gr.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\yaris-gr.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/yaris-gr.png",
       "AssetKind": "All",
@@ -1156,10 +1639,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\yaris-gr.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-autos\\yaris.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-autos\\yaris.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-autos/yaris.png",
       "AssetKind": "All",
@@ -1173,10 +1663,17 @@
       "OriginalItemSpec": "wwwroot\\img-autos\\yaris.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-creditos\\ian.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\ian.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-creditos/ian.png",
       "AssetKind": "All",
@@ -1190,10 +1687,17 @@
       "OriginalItemSpec": "wwwroot\\img-creditos\\ian.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-creditos\\lucas.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\lucas.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-creditos/lucas.png",
       "AssetKind": "All",
@@ -1207,10 +1711,17 @@
       "OriginalItemSpec": "wwwroot\\img-creditos\\lucas.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-creditos\\marco.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\marco.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-creditos/marco.png",
       "AssetKind": "All",
@@ -1224,10 +1735,17 @@
       "OriginalItemSpec": "wwwroot\\img-creditos\\marco.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\img-creditos\\tomas.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\img-creditos\\tomas.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "img-creditos/tomas.png",
       "AssetKind": "All",
@@ -1241,10 +1759,17 @@
       "OriginalItemSpec": "wwwroot\\img-creditos\\tomas.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\js\\site.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\js\\site.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1258,10 +1783,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1275,10 +1807,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1292,10 +1831,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1309,10 +1855,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1326,10 +1879,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1343,10 +1903,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1360,10 +1927,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1377,10 +1951,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1394,10 +1975,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1411,10 +1999,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1428,10 +2023,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1445,10 +2047,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1462,10 +2071,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1479,10 +2095,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1496,10 +2119,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1513,10 +2143,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1530,10 +2167,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1547,10 +2191,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1564,10 +2215,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1581,10 +2239,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1598,10 +2263,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1615,10 +2287,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1632,10 +2311,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1649,10 +2335,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1666,10 +2359,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1683,10 +2383,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1700,10 +2407,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1717,10 +2431,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1734,10 +2455,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1751,10 +2479,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1768,10 +2503,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1785,10 +2527,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1802,10 +2551,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1819,10 +2575,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1836,10 +2599,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1853,10 +2623,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1870,10 +2647,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1887,10 +2671,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1904,10 +2695,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1921,10 +2719,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1938,10 +2743,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1955,10 +2767,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1972,10 +2791,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1989,10 +2815,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2006,10 +2839,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2023,10 +2863,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2040,10 +2887,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2057,10 +2911,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2074,10 +2935,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2091,10 +2959,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2108,10 +2983,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2125,10 +3007,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2142,10 +3031,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2159,10 +3055,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2176,10 +3079,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2193,10 +3103,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2210,10 +3127,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47569637\\Desktop\\TP11\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572827\\Downloads\\TP11\\wwwroot\\",
+>>>>>>> d7e851952e2954137894b623facef5a10f8428ad
       "BasePath": "_content/TP11",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
