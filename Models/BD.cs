@@ -77,7 +77,7 @@ public static class BD{
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Usuario WHERE Email = @email";
             user = db.QueryFirstOrDefault<Usuario>(sql, new {email = Email});
-        }
+        }   
         return user;
     }
     public static Color ObtenerColor(int idColor){
