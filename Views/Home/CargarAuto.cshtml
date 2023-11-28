@@ -59,8 +59,9 @@
         <div class="form-group mb-3">
             <select class="form-control" name="IdColor" type="number" placeholder="Color" required>
                 <option value="" disabled selected>Color</option>
-                @for(int i = 0; i<@ViewBag.ListaColores.Count; i++){
-                    <option value="@(i+1)">@ViewBag.ListaColores[i].NombreColor</option>
+                @foreach (Color item in ViewBag.ListaColores)
+                {
+                    <option value="@(item.IdColor)">@item.NombreColor</option>
                 }
             </select>
         </div>
@@ -90,8 +91,9 @@
         <div class="form-group mb-3">
             <select class="form-control" name="IdMarca" type="number" required>
                 <option value="" disabled selected>Marca</option>
-                @for(int i = 0; i<@ViewBag.ListaMarcas.Count; i++){
-                    <option value="@(i+1)">@ViewBag.ListaMarcas[i].NombreMarca</option>
+                @foreach (Marca item in ViewBag.ListaMarcas)
+                {
+                    <option value="@(item.IdMarca)">@item.NombreMarca</option>
                 }
             </select>
         </div>
@@ -103,10 +105,11 @@
         <div class="form-group mb-3">
             <select class="form-control" name="IdModelo" type="number" required>
                 <option value="" disabled selected>Modelo</option>
-                @for(int i = 0; i<@ViewBag.ListaModelos.Count; i++){
-                    <option value="@(i+1)">@ViewBag.ListaModelos[i].NombreModelo</option>
+                @foreach (Modelo item in ViewBag.ListaModelos)
+                {
+                    <option value="@(item.IdModelo)">@item.NombreModelo</option>
                 }
-            </select>
+            </select> 
         </div>
 
         <div class="form-group mb-3">
