@@ -68,15 +68,17 @@
             @{
                 foreach(Auto auto in @ViewBag.ListaAutos)
                 {
+                    @if(auto.Disponible == true){
                     <div class="card">
                         <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
-                        <div class="containerCard">
-                            <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
-                            <p>Año: @auto.Ano</p>
-                            <p>Kilometraje: @auto.Kilometraje km</p>
-                            <a href="#" id="botonModal" class="btn btn-primary" data-toggle="modal" data-target="#ModalInformacion" onclick="MostrarAuto(@auto.IdAuto)">Más info</a>
-                        </div>
+                            <div class="containerCard">
+                                <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
+                                <p>Año: @auto.Ano</p>
+                                <p>Kilometraje: @auto.Kilometraje km</p>
+                                <a href="#" id="botonModal" class="btn btn-primary" data-toggle="modal" data-target="#ModalInformacion" onclick="MostrarAuto(@auto.IdAuto)">Más info</a>
+                            </div>
                     </div>
+                    }
                 }
             }
         </div>  
@@ -110,7 +112,8 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
         </div>
     </div>
