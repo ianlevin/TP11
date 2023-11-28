@@ -120,6 +120,13 @@ public static class BD{
         }
         return user;
     }
+    public static Void ActualizarAuto(string matricula){
+        Auto user;
+        using(SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "UPDATE Autos SET Disponibilidad = False WHERE Matricula = @matr";
+            user = db.QueryFirstOrDefault<Auto>(sql, new {matr = matricula});
+        }
+    }
 
     /*Filtro*/
     public static List<Auto> ObtenerAutoXColor(int idColor){

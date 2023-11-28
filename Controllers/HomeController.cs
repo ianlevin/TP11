@@ -149,9 +149,9 @@ public class HomeController : Controller
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
     }
-    public Object VerInformacionAuto(int idAuto){
+    public Auto VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
-        var Objeto = new {
+        Auto Objeto = new {
             auto = MiAuto,
             modelo = BD.ObtenerModelo(MiAuto.IdModelo),
             color = BD.ObtenerColor(MiAuto.IdColor),
@@ -160,6 +160,10 @@ public class HomeController : Controller
             marca = BD.ObtenerMarca(MiAuto.IdMarca)
         };
         return Objeto;
+    }
+    public IActionResult ActualizarAuto(string matricula){
+        BD.ActualizarAuto(matricula);
+        return RedirectToAction("Home");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
