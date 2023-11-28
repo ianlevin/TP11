@@ -53,6 +53,15 @@ public static class BD{
         }
         return user;
     }
+
+    public static List<Auto> ObtenerAutosUsuario(int IdUsuario){
+        List<Auto> list = new List<Auto>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Auto WHERE IdUsuario = @IdUsuario";
+            list = db.Query<Auto>(sql, new {IdUsuario = IdUsuario}).ToList();
+        }
+        return list;
+    }
     
     /*Objetos*/
     public static Auto ObtenerAuto(int idAuto){

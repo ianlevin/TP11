@@ -16,4 +16,81 @@
             </ul>
         </div>
     </div>
+
+      @if(ViewBag.AutosUsuario != null){
+        <div class="mainAutos">
+            @{
+                foreach(Auto auto in @ViewBag.AutosUsuario)
+                {
+                    @if(auto.Disponible == true){
+                    <div class="card">  
+                        <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
+                            <div class="containerCard">
+                                <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
+                                <p>Año: @auto.Ano</p>
+                                <p>Kilometraje: @auto.Kilometraje km</p>
+                            </div>
+                    </div>
+                    }
+                }
+            }
+        </div>  
+    }
 </body>
+<style>
+    .mainAutos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2rem;
+}
+
+.filtros{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: center;
+      padding: 2rem;
+}
+
+.filtros ul{
+      list-style-type: none !important; 
+      margin: 0 !important;
+      padding: 0 !important;
+      display: flex;
+      justify-content: space-between !important;
+}
+
+.card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 2em;
+      padding: 2em;
+      width: 20rem;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      display: flex;
+      justify-content: center;
+}
+    
+.card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+    
+.containerCard {
+      padding: 2px 16px;
+}
+li{
+      list-style: none;
+}
+ul{
+      display: flex;
+      flex-direction: row;
+      padding-left: 0%;
+}
+
+#infoAuto{
+      display: flex;
+      flex-direction: column;
+}
+</style>

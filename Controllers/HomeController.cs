@@ -53,6 +53,9 @@ public class HomeController : Controller
     public IActionResult MostrarUsuario(){
         string e = TempData["UserEmail"].ToString();
         Usuario UserActual = BD.ObtenerUsuario(e);
+       
+        ViewBag.AutosUsuario = BD.ObtenerAutosUsuario(UserActual.IdUsuario);
+
         ViewBag.nombreUsuario = UserActual.NombreUsuario;
         ViewBag.telefono = UserActual.Telefono;
         ViewBag.email = UserActual.Email;
