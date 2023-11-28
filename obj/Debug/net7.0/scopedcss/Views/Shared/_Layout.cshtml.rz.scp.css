@@ -46,7 +46,7 @@ nav[b-crqzjy7pi9]{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #eb2929;
+    background-color: rgb(91, 38, 216);
     transition: all 0.3s ease;
 }
 
@@ -58,14 +58,14 @@ nav[b-crqzjy7pi9]{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #1d4ed8;
+    background-color: rgb(91, 38, 216);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover[b-crqzjy7pi9]{
-    background-color: #1e40af;
+    background-color: rgb(91, 38, 216);
 }
 .box[b-crqzjy7pi9]{
     height: 30px;
