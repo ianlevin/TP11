@@ -120,7 +120,7 @@ public static class BD{
         }
         return user;
     }
-    public static Void ActualizarAuto(string matricula){
+    public static void ActualizarAuto(string matricula){
         Auto user;
         using(SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "UPDATE Autos SET Disponibilidad = False WHERE Matricula = @matr";

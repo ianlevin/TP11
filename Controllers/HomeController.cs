@@ -149,9 +149,9 @@ public class HomeController : Controller
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
     }
-    public Auto VerInformacionAuto(int idAuto){
+     public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
-        Auto Objeto = new {
+        var Objeto = new {
             auto = MiAuto,
             modelo = BD.ObtenerModelo(MiAuto.IdModelo),
             color = BD.ObtenerColor(MiAuto.IdColor),
