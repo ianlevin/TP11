@@ -123,7 +123,7 @@ public static class BD{
     public static void ActualizarAuto(int IdAuto){
         Auto user;
         using(SqlConnection db = new SqlConnection(ConnectionString)){
-            string sql = "UPDATE Autos SET Disponibilidad = False WHERE IdAuto = @id";
+            string sql = "UPDATE Auto SET Disponible = 0 WHERE IdAuto = @id";
             user = db.QueryFirstOrDefault<Auto>(sql, new {id = IdAuto});
         }
     }

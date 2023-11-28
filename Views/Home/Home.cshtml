@@ -76,6 +76,7 @@
                                 <p>Año: @auto.Ano</p>
                                 <p>Kilometraje: @auto.Kilometraje km</p>
                                 <a href="#" id="botonModal" class="btn btn-primary" data-toggle="modal" data-target="#ModalInformacion" onclick="MostrarAuto(@auto.IdAuto)">Más info</a>
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal" id="ComprarBoton" onclick="actualizarAuto(@auto.IdAuto)">Comprar</button>
                             </div>
                     </div>
                     }
@@ -112,7 +113,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button type="submit" class="btn btn-primary" data-dismiss="modal" id="ComprarBoton" onclick="actualizarAuto()">Comprar</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
         </div>
         </div>
     </div>
