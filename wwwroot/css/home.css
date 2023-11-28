@@ -9,6 +9,10 @@ body{
       background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
+.btn{
+      background-color: rgb(91, 38, 216) !important;
+      border-color: rgb(91, 38, 216) !important;
+}
 .home{
       display: flex;
       flex-direction: column;
@@ -76,7 +80,7 @@ ul{
 }
 
 .btn-enviar {   
-      background-color: rgb(224, 104, 134); 
+      background-color: rgb(91, 38, 216); 
       color: #fff; 
       padding: 10px 20px; 
       font-size: 12px; 
@@ -86,11 +90,11 @@ ul{
 }
       
 .btn-enviar:hover {
-      background-color: rgb(223, 71, 109);
+      background-color: rgb(91, 38, 216);
 }
       
 .select1{
-      background-color: rgb(224, 104, 134); 
+      background-color: rgb(91, 38, 216); 
       color: #fff;
       font-size: 12px; 
       padding: 10px 20px; 
@@ -101,7 +105,7 @@ ul{
       
 .seleccionadores1 {
       display: inline;
-      background-color: rgb(224, 104, 134); 
+      background-color: rgb(91, 38, 216); 
       color: #fff;
       font-size: 12px; 
       padding: 10px 20px; 
