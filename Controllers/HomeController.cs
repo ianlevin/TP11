@@ -110,19 +110,19 @@ public class HomeController : Controller
         ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
         List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
-            case "color":
+            case "Color":
                 ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id); 
                 break;
-            case "marca":
+            case "Marca":
                 ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 
                 break;
-            case "modelo":
+            case "Modelo":
                 ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id); 
                 break;
-            case "direccion":
+            case "Direccion":
                 ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id); 
                 break;
-            case "transmision":
+            case "Transmision":
                 ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id); 
                 break;
         }
