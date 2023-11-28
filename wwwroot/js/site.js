@@ -7,7 +7,7 @@ $.ajax(
         data: {IdAuto: id},
         success:
         function (response){
-            $("#imagen").html(response.auto.Imagen);
+            $("#imagen").attr("src", response.auto.urlImagen);
             $("#titulo").html(response.modelo.nombreModelo);
             $("#anio").html("Año: "+response.auto.ano);
             $("#km").html("Kilometraje: "+response.auto.kilometraje+"km");
