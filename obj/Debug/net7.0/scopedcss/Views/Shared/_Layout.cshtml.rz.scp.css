@@ -58,14 +58,14 @@ nav[b-crqzjy7pi9]{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: rgb(91, 38, 216);
+    background-color: #1d4ed8;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover[b-crqzjy7pi9]{
-    background-color: rgb(91, 38, 216);
+    background-color: #1e40af;
 }
 .box[b-crqzjy7pi9]{
     height: 30px;
