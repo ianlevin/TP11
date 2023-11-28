@@ -149,7 +149,7 @@ public class HomeController : Controller
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
     }
-     public Object VerInformacionAuto(int idAuto){
+    public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
         var Objeto = new {
             auto = MiAuto,
