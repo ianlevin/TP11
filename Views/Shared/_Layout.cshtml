@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TP11.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
-    <script src="https://kit.fontawesome.com/a076d053999.js"></script>
+    <script src="https://kit.fontawesome.com/f6453d4774.js" crossorigin="anonymous"></script>
 </head>
 <body>
     @if(ViewBag.NavBar == null){
@@ -20,7 +20,7 @@
             <ul class="nav-links">
                 <li class="link"><a href='@Url.Action("Home")'>Home</a></li>
                 <li class="link"><a href='@Url.Action("MostrarUsuario")'>Perfil</a></li>
-                <li id="link3" class="link"><a href='@Url.Action("CargarAuto", new{IdUsuario = ViewBag.IdUsuario})'>Vender</a></li>
+                <li id="link3" class="link"><a href='@Url.Action("CargarAuto")'>Vender</a></li>
             </ul>
             <form action='@Url.Action("ProductoBuscado")' class="d-flex" role="search">
                 <div class=box>

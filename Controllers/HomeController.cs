@@ -129,11 +129,15 @@ public class HomeController : Controller
         return View("Home");
     }
 
-    public IActionResult CargarAuto(int IdUsuario){
+    public IActionResult CargarAuto(){
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
-        ViewBag.IdUsuario = IdUsuario;
+        string e = TempData["UserEmail"].ToString();
+        TempData["UserEmail"] = e;
+        Usuario UserActual = BD.ObtenerUsuario(e);
+
+        ViewBag.IdUsuario = UserActual.IdUsuario;
         return View();
     }
 
