@@ -2,7 +2,7 @@ using System.Data.SqlClient;
 using Dapper;
 
 public static class BD{
-    private static string ConnectionString {get; set;} = @"Server=DESKTOP-5VP95V6\SQLEXPRESS;DataBase=BDAutosAlRio;Trusted_Connection=True;";
+    private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BDAutosAlRio;Trusted_Connection=True;";
 
     /*Listas*/
     public static List<Auto> ObtenerAutos(){
