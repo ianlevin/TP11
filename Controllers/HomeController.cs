@@ -28,7 +28,9 @@ public class HomeController : Controller
         ViewBag.NavBar = ",";
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
-        TempData["UserEmail"] = User.Email;
+        if(User != null){ //Manejo de error
+            TempData["UserEmail"] = User.Email;
+        }
         if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
             ViewBag.Error = "Usuario o contraseña incorrectos";
             return View("Index");
