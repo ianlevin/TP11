@@ -1,5 +1,7 @@
 using System.Data.SqlClient;
 using Dapper;
+using System.Security.Cryptography;
+using System.Text;
 
 public static class BD{
     private static string ConnectionString {get; set;} = @"Server=localhost;DataBase=BDAutosAlRio;Trusted_Connection=True;";
@@ -203,4 +205,18 @@ public static class BD{
             }
         }
     }
+
+
+    //Encriptacion
+
+    public static string GetSHA256(string str){
+        SHA256 sha256 = SHA256Managed.Create();
+        ASCIIEncoding encoding = new ASCIIEncoding();
+        byte[] stream = null;
+        StringBuilder sb = new StringBuilder();
+        stream = sha256.ComputeHash(encoding.GetBytes(str));
+        for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+        return sb.ToString();
+    }
+
 }
