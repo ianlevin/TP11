@@ -25,6 +25,7 @@ public class HomeController : Controller
 
     public IActionResult SignIn(string Email, string Password)
     {
+        Password = BD.GetSHA256(Password);
         ViewBag.NavBar = ",";
         Usuario User = BD.ObtenerUsuario(Email);
         ViewBag.Usuario = User;
@@ -45,6 +46,7 @@ public class HomeController : Controller
             ViewBag.Error = "Ya existe ese usuario ingrese un Email diferente";
             return View("Index");
         }else{
+            contrasena = BD.GetSHA256(contrasena);
             Usuario user = new Usuario(0, DateTime.Now, nombre, email, telefono, "-", false, contrasena);
             TempData["UserEmail"] = user.Email;
             BD.CrearUsuario(user);
