@@ -4,17 +4,15 @@
     <div class="filtros">
         <ul>
         <li>
-            <form action='@Url.Action("Filtro")' style="margin-right: 5px !important;">
                 <select name="id" class="select1">
                     @{
                         for (int i = 0; i < ViewBag.ListaColores.Count; i++)
                         {
-                            <option onclick="filtros(@ViewBag.ListaColores[i].IdColor)" >@ViewBag.ListaColores[i].NombreColor</option>
+                            <option onclick="filtros(@ViewBag.ListaColores[i].IdColor, 'Color' )" >@ViewBag.ListaColores[i].NombreColor</option>
                         }
                     }
                 </select>
-            </form>
-        <li>
+        <li>|
 
         <li>
             <form action='@Url.Action("Filtro")'style="margin-right: 5px !important;">

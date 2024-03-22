@@ -42,3 +42,13 @@ $.ajax(
     }
 )
 } 
+function filtros(idElemento, elemento){
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/Filtro',
+            data: {filtro : elemento, Id : idElemento}
+        }
+    )
+}
