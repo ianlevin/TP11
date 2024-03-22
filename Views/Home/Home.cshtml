@@ -1,17 +1,22 @@
 <link rel="stylesheet" href="~/css/home.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div class="home">
     <div class="filtros">
         <ul>
         <li>
-                <select name="id" class="select1">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @{
                         for (int i = 0; i < ViewBag.ListaColores.Count; i++)
-                        {
-                            <option onclick="filtros(@ViewBag.ListaColores[i].IdColor, 'Color' )" >@ViewBag.ListaColores[i].NombreColor</option>
+                        {   
+                            <button onclick="filtros(@ViewBag.ListaColores[i].IdColor, 'Color' )">@ViewBag.ListaColores[i].NombreColor</button>
                         }
                     }
-                </select>
+                </div>
+            </div>
         <li>|
 
         <li>
@@ -81,7 +86,7 @@
             }
         </div>  
     }
-    else{ //Caso de que no se encuentren vehiculos para mostrar
+    else{ //Caso de que no se encuentren vehiculos para mostrar, falta terminar el boton.
         <div class="mainAutos">No hay vehiculos para mostrar</div>
         <div class="filtroserror">
             <a type="submit" class="btn btn-primary recargarButton">Recargar Filtros</a>
@@ -123,6 +128,6 @@
     </div>
     </div>
 </div>   
-<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
