@@ -114,3 +114,12 @@ ul{
       border-radius: 5px; 
       cursor: pointer;
 }
+
+.filtroserror{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.filtroserror a{
+      width: 20rem;
+}
