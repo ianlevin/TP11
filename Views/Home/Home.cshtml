@@ -9,11 +9,10 @@
                     @{
                         for (int i = 0; i < ViewBag.ListaColores.Count; i++)
                         {
-                            <option value="@ViewBag.ListaColores[i].IdColor">@ViewBag.ListaColores[i].NombreColor</option>
+                            <option onclick="filtros(@ViewBag.ListaColores[i].IdColor)" >@ViewBag.ListaColores[i].NombreColor</option>
                         }
                     }
                 </select>
-             <input type="submit" name="filtro" value="Color" class="btn-enviar">
             </form>
         <li>
 
