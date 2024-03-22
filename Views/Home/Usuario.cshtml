@@ -10,9 +10,15 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Email: @ViewBag.email</li>
-                <li class="list-group-item">Telefono: @ViewBag.telefono</li>
-                <li class="list-group-item">Direccion: @ViewBag.direccion</li>
-                <li class="list-group-item">Fecha de Nacimiento: @ViewBag.fechaN.ToShortDateString()</li>
+                @{//Este codigo se encarga de filtrar para no mostrar la informacion que no existe, falta crear formulario para poder subirla
+                    if(ViewBag.telefono != null){
+                        <li class="list-group-item">Telefono: @ViewBag.telefono</li>
+                    }
+                    if(ViewBag.direccion != null){
+                        <li class="list-group-item">Direccion: @ViewBag.direccion</li>
+                    }
+                }
+                
             </ul>
             <a class="btn btn-primary" href='@Url.Action("index")'>Cerrar Sesion</a>
         </div>
