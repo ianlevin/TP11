@@ -95,11 +95,15 @@ public class HomeController : Controller
             }
             return View("Home");
     }
-    public IActionResult Home()
+    public IActionResult Home(List<Auto> autos, int a)
     {   
         string e = TempData["UserEmail"].ToString();
         TempData["UserEmail"] = e;
-        ViewBag.ListaAutos = BD.ObtenerAutos();
+        if(autos.Count == 0){
+            ViewBag.ListaAutos = BD.ObtenerAutos();
+        }else{
+            ViewBag.ListaAutos = autos;
+        }
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
@@ -110,30 +114,29 @@ public class HomeController : Controller
     }
     public IActionResult Filtro(string filtro, int Id)
     {
-        ViewBag.ListaColores = BD.ObtenerColores();
-        ViewBag.ListaMarcas = BD.ObtenerMarcas();
-        ViewBag.ListaModelos = BD.ObtenerModelos();
-        ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
-        ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
         List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
             case "Color":
-                ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id); 
+                ListaAutos = BD.ObtenerAutoXColor(Id); 
                 break;
             case "Marca":
-                ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 
+                ListaAutos = BD.ObtenerAutoXMarca(Id); 
                 break;
             case "Modelo":
-                ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id); 
+                ListaAutos = BD.ObtenerAutoXModelo(Id); 
                 break;
             case "Direccion":
-                ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id); 
+                ListaAutos = BD.ObtenerAutoXDireccion(Id); 
                 break;
             case "Transmision":
-                ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id); 
+                ListaAutos = BD.ObtenerAutoXTransmision(Id); 
                 break;
         }
-        return View("Home");
+        Auto[] autosvector = new Auto[ListaAutos.Count];
+        for(int i = 0; i<ListaAutos.Count; i++){
+            autosvector[i] = ListaAutos[i];
+        }
+        return RedirectToAction("Home", "Home", new{a = 1, autos = autosvector});
     }
 
     public IActionResult CargarAuto(){

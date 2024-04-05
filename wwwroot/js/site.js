@@ -43,6 +43,7 @@ $.ajax(
 )
 } 
 function filtros(idElemento, elemento){
+    console.log("a")
     $.ajax(
         {
             type: 'POST',
@@ -51,4 +52,5 @@ function filtros(idElemento, elemento){
             data: {filtro : elemento, Id : idElemento}
         }
     )
+    window.location.reload();
 }
