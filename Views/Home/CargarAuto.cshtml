@@ -89,7 +89,7 @@
         </div>
 
         <div class="form-group mb-3">
-            <select class="form-control" name="IdMarca" type="number" required>
+            <select class="form-control" name="IdMarca" id="IdMarca" type="number" onchange=actualizarModelos() required>
                 <option value="" disabled selected>Marca</option>
                 @foreach (Marca item in ViewBag.ListaMarcas)
                 {
@@ -103,7 +103,7 @@
         </div>
 
         <div class="form-group mb-3">
-            <select class="form-control" name="IdModelo" type="number" required>
+            <select class="form-control" name="IdModelo" id="IdModelo" type="number" required>
                 <option value="" disabled selected>Modelo</option>
                 @foreach (Modelo item in ViewBag.ListaModelos)
                 {
@@ -122,5 +122,25 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
+
+    <script>
+    function actualizarModelos() {
+        var marcaSeleccionada = document.getElementById("IdMarca").value;
+        var modelos = document.getElementsByClassName("modelo");
+
+        for (var i = 0; i < modelos.length; i++) {
+            var modelo = modelos[i];
+            var marcaModelo = modelo.getAttribute("data-marca");
+
+            if (marcaSeleccionada === marcaModelo) {
+                modelo.style.display = "block";
+            } else {
+                modelo.style.display = "none";
+            }
+        }
+    }
+</script>
 </body>
+
+
 
