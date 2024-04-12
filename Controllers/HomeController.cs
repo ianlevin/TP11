@@ -174,6 +174,10 @@ public class HomeController : Controller
         return RedirectToAction("Home");
     }
 
+    public IActionResult RellenarUsuario(){
+        return View("LlenarUsuario");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
