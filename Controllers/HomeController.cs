@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 using TP11.Models;
 
 namespace TP11.Controllers;
@@ -7,10 +9,11 @@ namespace TP11.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private IWebHostEnvironment Environment;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IWebHostEnvironment environment)
     {
-        _logger = logger;
+        Environment = environment;
     }
 
     public IActionResult Index()
@@ -140,7 +143,7 @@ public class HomeController : Controller
         return View("Home");
     }
 
-    public IActionResult CargarAuto(){
+    public IActionResult CargarAuto(IFormFile MyFile){
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
         ViewBag.ListaModelos = BD.ObtenerModelos();
@@ -149,11 +152,20 @@ public class HomeController : Controller
         Usuario UserActual = BD.ObtenerUsuario(e);
 
         ViewBag.IdUsuario = UserActual.IdUsuario;
+
         return View();
     }
 
-    public IActionResult CargarDatosAuto(int Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor, int IdTransmision, int IdDireccion, int IdMarca, string Imagen, int IdModelo, int Precio, int IdUsuario){
-        Auto auto = new Auto(0,Ano, Kilometraje, Matricula, true, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio);
+    [HttpPost]
+    public IActionResult CargarDatosAuto(int Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor, int IdTransmision, int IdDireccion, int IdMarca, IFormFile MyFile, int IdModelo, int Precio, int IdUsuario){
+        if(MyFile.Length>0){
+            string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\img-autos\" + MyFile.FileName;
+            using (var stream = System.IO.File.Create(wwwRootLocal)){
+                MyFile.CopyToAsync(stream);
+            };
+        }
+        Auto auto = new Auto(0, Ano, Kilometraje, Matricula, true, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, MyFile.FileName, IdModelo, Precio);
+
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
     }
