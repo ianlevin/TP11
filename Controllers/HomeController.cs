@@ -114,29 +114,30 @@ public class HomeController : Controller
     }
     public IActionResult Filtro(string filtro, int Id)
     {
+        ViewBag.ListaColores = BD.ObtenerColores();
+        ViewBag.ListaMarcas = BD.ObtenerMarcas();
+        ViewBag.ListaModelos = BD.ObtenerModelos();
+        ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
+        ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
         List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
             case "Color":
-                ListaAutos = BD.ObtenerAutoXColor(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id); 
                 break;
             case "Marca":
-                ListaAutos = BD.ObtenerAutoXMarca(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 
                 break;
             case "Modelo":
-                ListaAutos = BD.ObtenerAutoXModelo(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id); 
                 break;
             case "Direccion":
-                ListaAutos = BD.ObtenerAutoXDireccion(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id); 
                 break;
             case "Transmision":
-                ListaAutos = BD.ObtenerAutoXTransmision(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id); 
                 break;
         }
-        Auto[] autosvector = new Auto[ListaAutos.Count];
-        for(int i = 0; i<ListaAutos.Count; i++){
-            autosvector[i] = ListaAutos[i];
-        }
-        return RedirectToAction("Home", "Home", new{a = 1, autos = autosvector});
+        return View("Home");
     }
 
     public IActionResult CargarAuto(){
