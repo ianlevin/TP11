@@ -6,13 +6,15 @@
         <li>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Color
+                    Filtrar Color
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @{
                         for (int i = 0; i < ViewBag.ListaColores.Count; i++)
                         {   
-                            <a href='@Url.Action("filtro", new {filtro = "Color", Id = @ViewBag.ListaColores[i].IdColor})'>@ViewBag.ListaColores[i].NombreColor</a>
+                            <div class = "contenedor">
+                                <a class = "enlace" href='@Url.Action("filtro", new {filtro = "Color", Id = @ViewBag.ListaColores[i].IdColor})'>@ViewBag.ListaColores[i].NombreColor</a>
+                            </div>
                         }
                     }
                 </div>
@@ -22,13 +24,15 @@
         <li>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Marca
+                    Filtrar Marca
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @{
                         for (int i = 0; i < ViewBag.ListaMarcas.Count; i++)
                         {   
-                            <a href='@Url.Action("filtro", new {filtro = "Marca", Id = @ViewBag.ListaMarcas[i].IdMarca})'>@ViewBag.ListaMarcas[i].NombreMarca</a>
+                            <div class = "contenedor">
+                                <a class = "enlace" href='@Url.Action("filtro", new {filtro = "Marca", Id = @ViewBag.ListaMarcas[i].IdMarca})'>@ViewBag.ListaMarcas[i].NombreMarca</a>
+                            </div>
                         }
                     }
                 </div>
@@ -38,13 +42,15 @@
         <li>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Direccion
+                    Filtrar Direccion
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @{
                         for (int i = 0; i < ViewBag.ListaDirecciones.Count; i++)
                         {   
-                            <a href='@Url.Action("filtro", new {filtro = "Direccion", Id = @ViewBag.ListaDirecciones[i].IdDireccion})'>@ViewBag.ListaDirecciones[i].NombreDireccion</a>
+                            <div class = "contenedor">
+                                <a class = "enlace" href='@Url.Action("filtro", new {filtro = "Direccion", Id = @ViewBag.ListaDirecciones[i].IdDireccion})'>@ViewBag.ListaDirecciones[i].NombreDireccion</a>
+                            </div>
                         }
                     }
                 </div>
@@ -54,13 +60,15 @@
         <li>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Transmision
+                    Filtrar Transmision
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @{
                         for (int i = 0; i < ViewBag.ListaTransmisiones.Count; i++)
                         {   
-                            <a href='@Url.Action("filtro", new {filtro = "Transmision", Id = @ViewBag.ListaTransmisiones[i].IdTransmision})'>@ViewBag.ListaTransmisiones[i].NombreTransmision</a>
+                            <div class = "contenedor">
+                                <a class = "enlace" href='@Url.Action("filtro", new {filtro = "Transmision", Id = @ViewBag.ListaTransmisiones[i].IdTransmision})'>@ViewBag.ListaTransmisiones[i].NombreTransmision</a>
+                            </div>
                         }
                     }
                 </div>
