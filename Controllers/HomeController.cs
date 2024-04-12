@@ -112,7 +112,7 @@ public class HomeController : Controller
 
         return View();
     }
-    public IActionResult Filtro(string filtro, int Id)
+    public IActionResult Filtro(string filtro, int Id, List<Auto> ListaAutosPervia)
     {
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
@@ -122,7 +122,7 @@ public class HomeController : Controller
         List<Auto> ListaAutos = new List<Auto>();
         switch(filtro){
             case "Color":
-                ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id, ListaAutosPervia);
                 break;
             case "Marca":
                 ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 

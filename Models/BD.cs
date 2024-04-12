@@ -130,11 +130,15 @@ public static class BD{
     }
 
     /*Filtro*/
-    public static List<Auto> ObtenerAutoXColor(int idColor){
+    public static List<Auto> ObtenerAutoXColor(int idColor, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdColor = @idCol";
             user = db.Query<Auto>(sql, new {idCol = idColor}).ToList();
+            for(int i = 0; i<ListaAutos.Count; i++){
+                //funcion que ejecutando en sql trayendo cada auto con tal color viendo si existe con tods los ids de ListaAutos
+                //SELECT * FROM Auto WHERE IdColor = (algun IdColor) AND IdAuto = (i en el for en ListaAutos (ListaAutos[i]))
+            }
         }
         return user;
     }
