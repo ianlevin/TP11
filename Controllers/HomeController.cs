@@ -150,25 +150,90 @@ public class HomeController : Controller
         string e = TempData["UserEmail"].ToString();
         TempData["UserEmail"] = e;
         Usuario UserActual = BD.ObtenerUsuario(e);
-
         ViewBag.IdUsuario = UserActual.IdUsuario;
 
-        return View();
+        int pasoActual = TempData.ContainsKey("PasoActualKey") ? (int)TempData["PasoActualKey"] : 1;
+
+        switch (pasoActual)
+        {
+            case 1:
+                return View("CargarAuto1");
+            case 2:
+                return View("CargarAuto2");
+            case 3:
+                return View("CargarAuto3");
+            case 4:
+                return View("CargarAuto4");
+            default:
+                return RedirectToAction("CargarAuto");
+        }
+    }
+    [HttpPost]
+    public IActionResult CargarDatos1(int Kilometraje, string Matricula, string Motor, int IdMarca){
+        TempData["Marca"] = IdMarca;
+        TempData["Motor"] = Motor;
+        TempData["Matricula"] = Matricula;
+        TempData["Kilometraje"] = Kilometraje;
+
+        TempData["PasoActualKey"] = 2;
+
+        return RedirectToAction("CargarAuto");
     }
 
     [HttpPost]
-    public IActionResult CargarDatosAuto(int Ano, int Kilometraje, string Matricula, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor, int IdTransmision, int IdDireccion, int IdMarca, IFormFile MyFile, int IdModelo, int Precio, int IdUsuario){
+    public IActionResult CargarDatos2(int Ano, int Asientos, int IdColor, int IdModelo){
+        TempData["Ano"] = Ano;
+        TempData["Asientos"] = Asientos;
+        TempData["Color"] = IdColor;
+        TempData["Modelo"] = IdModelo;
+
+        TempData["PasoActualKey"] = 3;
+
+        return RedirectToAction("CargarAuto");
+    }
+
+    [HttpPost]
+    public IActionResult CargarDatos3(bool AireAcondicionado, bool Airbag, bool ABS, int IdTransmision, int IdDireccion){
+        TempData["Aire"] = AireAcondicionado;
+        TempData["Airbag"] = Airbag;
+        TempData["ABS"] = ABS;
+        TempData["Transmision"] = IdTransmision;
+        TempData["Direccion"] = IdDireccion;
+
+        TempData["PasoActualKey"] = 4;
+
+        return RedirectToAction("CargarAuto");
+    }
+
+    [HttpPost]
+    public IActionResult CargarDatos4(IFormFile MyFile, int Precio, int IdUsuario){
         if(MyFile.Length>0){
             string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\img-autos\" + MyFile.FileName;
             using (var stream = System.IO.File.Create(wwwRootLocal)){
                 MyFile.CopyToAsync(stream);
             };
         }
-        Auto auto = new Auto(0, Ano, Kilometraje, Matricula, true, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, MyFile.FileName, IdModelo, Precio);
+
+        int marca = Convert.ToInt32(TempData["Marca"]);
+        string motor = TempData["Motor"].ToString();
+        string matricula = TempData["Matricula"].ToString();
+        int kilometraje = Convert.ToInt32(TempData["Kilometraje"]);
+        int modelo = Convert.ToInt32(TempData["Modelo"]);
+        int color = Convert.ToInt32(TempData["Color"]);
+        int anioPublicacion = Convert.ToInt32(TempData["Ano"]);
+        int cantidadAsientos = Convert.ToInt32(TempData["Asientos"]);
+        int transmision = Convert.ToInt32(TempData["Transmision"]);
+        int direccion = Convert.ToInt32(TempData["Direccion"]);
+        bool aireAcondicionado = (bool)TempData["AireAcondicionado"];
+        bool airbag = (bool)TempData["Airbag"];
+        bool abs = (bool)TempData["ABS"];
+
+        Auto auto = new Auto(0, anioPublicacion, kilometraje, matricula, true, cantidadAsientos, motor, aireAcondicionado, abs, airbag, color, transmision, direccion, marca, IdUsuario, MyFile.FileName, modelo, Precio);
 
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
     }
+    
     public Object VerInformacionAuto(int idAuto){
         Auto MiAuto = BD.ObtenerAuto(idAuto); 
         var Objeto = new {
