@@ -78,7 +78,7 @@ nav{
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
 .box:hover input{
-    width: 400px;
+    width: 150px;
 }
 .box input{
     width: 0;
