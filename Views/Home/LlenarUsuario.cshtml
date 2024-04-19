@@ -1,0 +1,12 @@
+<form Action='@Url.Action("LlenarInformacion")'>
+    @{
+        if(ViewBag.direccion == null){
+            <input type="text" value="" name="direccion" placeholder="Direccion">
+        }
+        if(ViewBag.fechaN == null){
+            <input type="text" value="" name="fechanacimiento" placeholder="Fecha de nacimiento">
+        }
+    }
+      
+
+</form>

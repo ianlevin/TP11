@@ -199,6 +199,12 @@ public static class BD{
         }
     }
 
+    public static void UpdateUsuario(string direccion, DateTime fechanacimiento, int IdUsuario){
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "UPDATE Usuario SET Direccion = @pdireccion, FechaNacimiento = @pfechanacimiento WHERE IdUsuario = @idusuario";
+            db.Execute(sql, new {pdireccion = direccion, pfechanacimiento = fechanacimiento, idusuario = IdUsuario});
+        }
+    }
     public static bool ExisteUsuario(string Email){
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Usuario WHERE Email = @email";

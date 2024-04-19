@@ -251,7 +251,22 @@ public class HomeController : Controller
         return RedirectToAction("Home");
     }
 
+    public IActionResult LlenarInformacion(string direccion, DateTime fechanacimiento){
+        string e = TempData["UserEmail"].ToString();
+        Usuario UserActual = BD.ObtenerUsuario(e);
+        TempData["UserEmail"] = e;
+        BD.UpdateUsuario(direccion, fechanacimiento, UserActual.IdUsuario);
+        return RedirectToAction("MostrarUsuario");
+    }
+
     public IActionResult RellenarUsuario(){
+        string e = TempData["UserEmail"].ToString();
+        TempData["UserEmail"] = e;
+        Usuario UserActual = BD.ObtenerUsuario(e);
+
+        ViewBag.nombreUsuario = UserActual.NombreUsuario;
+        ViewBag.direccion = UserActual.Direccion;
+        ViewBag.fechaN = UserActual.FechaNacimiento;
         return View("LlenarUsuario");
     }
 
