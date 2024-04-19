@@ -224,11 +224,11 @@ public class HomeController : Controller
         int cantidadAsientos = Convert.ToInt32(TempData["Asientos"]);
         int transmision = Convert.ToInt32(TempData["Transmision"]);
         int direccion = Convert.ToInt32(TempData["Direccion"]);
-        bool aireAcondicionado = (bool)TempData["AireAcondicionado"];
+        bool aireAcondicionado = (bool)TempData["Aire"];
         bool airbag = (bool)TempData["Airbag"];
         bool abs = (bool)TempData["ABS"];
 
-        Auto auto = new Auto(0, anioPublicacion, kilometraje, matricula, true, cantidadAsientos, motor, aireAcondicionado, abs, airbag, color, transmision, direccion, marca, IdUsuario, MyFile.FileName, modelo, Precio);
+       Auto auto = new Auto(0, anioPublicacion, kilometraje, matricula, true, cantidadAsientos, motor, aireAcondicionado, abs, airbag, color, transmision, direccion, marca, IdUsuario, MyFile.FileName, modelo, Precio);
 
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
