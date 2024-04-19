@@ -45,6 +45,7 @@
                                 <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
                                 <p>Año: @auto.Ano</p>
                                 <p>Kilometraje: @auto.Kilometraje km</p>
+                                <a type="submit" class="btn btn-danger" data-dismiss="modal" id="ComprarBoton" href='@Url.Action("ActualizarAuto", new{idAuto = @auto.IdAuto})'>Eliminar Auto</a> 
                             </div>
                     </div>
                     }
