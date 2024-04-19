@@ -43,25 +43,3 @@
         </div>
     </div>
 </div>
-
-<script src="script.js"></script>
-<script>
-    const container = document.getElementById('container');
-    const registerBtn = document.getElementById('register');
-    const loginBtn = document.getElementById('login');
-    const errorDiv = document.getElementById('error');
-
-    registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-    });
-
-    loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
-    });
-    if (errorDiv) {
-        setTimeout(() => {
-            errorDiv.style.display = 'none';
-        }, 5000);
-    }
-</script>
-
