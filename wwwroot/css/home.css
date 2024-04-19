@@ -140,3 +140,7 @@ ul{
       background-color: #ddd; 
       color: #555; 
 }
+
+li{
+      padding: 3px;
+}
