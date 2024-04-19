@@ -146,7 +146,6 @@ public class HomeController : Controller
     public IActionResult CargarAuto(IFormFile MyFile){
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
-        ViewBag.ListaModelos = BD.ObtenerModelos();
         string e = TempData["UserEmail"].ToString();
         TempData["UserEmail"] = e;
         Usuario UserActual = BD.ObtenerUsuario(e);
@@ -159,6 +158,8 @@ public class HomeController : Controller
             case 1:
                 return View("CargarAuto1");
             case 2:
+                int idMarca = Convert.ToInt32(TempData["Marca"]);
+                ViewBag.ListaModelos = BD.ObtenerModelosXMarca(idMarca);
                 return View("CargarAuto2");
             case 3:
                 return View("CargarAuto3");

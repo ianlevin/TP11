@@ -175,6 +175,15 @@ public static class BD{
         return user;
     }
 
+    public static List<Modelo> ObtenerModelosXMarca(int idMarca){
+        List<Modelo> list = new List<Modelo>();
+        using (SqlConnection db = new SqlConnection(ConnectionString)){
+            string sql = "SELECT * FROM Modelo WHERE IdMarca = @idMarca";
+            list = db.Query<Modelo>(sql, new {IdMarca = idMarca}).ToList();
+        }
+        return list;
+    }
+
     public static string ObtenerNombreModelo(int idModelo){
         string nombreModelo = "";
         using (SqlConnection db = new SqlConnection(ConnectionString)){
