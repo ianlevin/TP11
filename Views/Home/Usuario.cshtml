@@ -18,7 +18,7 @@
                         <li class="list-group-item">Direccion: @ViewBag.direccion</li>
                     }
 
-                    if(ViewBag.fechaN == null || ViewBag.direccion == null){
+                    if(ViewBag.fechaN == DateTime.Parse("1/1/0001 00:00:00") || ViewBag.direccion == null){
                         <a class="btn btn-danger" href='@Url.Action("RellenarUsuario")'>Rellenar informacion personal</a>
                     }
                 }
@@ -37,7 +37,7 @@
                     <div class="card">  
                         <img src="/img-autos/@auto.Imagen" alt="img" style="width:100%">
                             <div class="containerCard">
-                                <h4>@BD.ObtenerNombreModelo(@auto.IdModelo)</h4>
+                                <h4>@BD.ObtenerNombreModelo(@auto.IdModelo, null)</h4>
                                 <p>Año: @auto.Ano</p>
                                 <p>Kilometraje: @auto.Kilometraje km</p>
                             </div>

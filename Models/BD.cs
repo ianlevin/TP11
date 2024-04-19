@@ -132,17 +132,29 @@ public static class BD{
     /*Filtro*/
     public static List<Auto> ObtenerAutoXColor(int idColor, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
+        List<Auto> listafinal = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
+
             string sql = "SELECT * FROM Auto WHERE IdColor = @idCol";
             user = db.Query<Auto>(sql, new {idCol = idColor}).ToList();
-            for(int i = 0; i<ListaAutos.Count; i++){
-                //funcion que ejecutando en sql trayendo cada auto con tal color viendo si existe con tods los ids de ListaAutos
-                //SELECT * FROM Auto WHERE IdColor = (algun IdColor) AND IdAuto = (i en el for en ListaAutos (ListaAutos[i]))
+
+            if(ListaAutos.Count == 0){
+                return user;
+            }else{
+                for(int i = 0; i < ListaAutos.Count; i++){
+                for(int j  = 0; j<user.Count; j++){
+                    if(ListaAutos[i].IdAuto == user[j].IdAuto){
+                        listafinal.Add(user[j]);
+                        break;
+                    }
+                }    
             }
+            }
+            
         }
-        return user;
+        return listafinal;
     }
-    public static List<Auto> ObtenerAutoXDireccion(int idDireccion){
+    public static List<Auto> ObtenerAutoXDireccion(int idDireccion, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdDireccion = @idDir";
@@ -150,7 +162,7 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerAutoXMarca(int idMarca){
+    public static List<Auto> ObtenerAutoXMarca(int idMarca, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdMarca = @idMar";
@@ -158,15 +170,20 @@ public static class BD{
         }
         return user;
     }
-    public static List<Auto> ObtenerAutoXModelo(int idModelo){
+    public static List<Auto> ObtenerAutoXModelo(int idModelo, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
-        using (SqlConnection db = new SqlConnection(ConnectionString)){
+        if(ListaAutos != null){
+            return user;
+        }else{
+            using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdModelo = @idMod";
             user = db.Query<Auto>(sql, new {idMod = idModelo}).ToList();
         }
         return user;
+        }
+        
     }
-    public static List<Auto> ObtenerAutoXTransmision(int idTransmision){
+    public static List<Auto> ObtenerAutoXTransmision(int idTransmision, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT * FROM Auto WHERE IdTransmision = @idTran";
@@ -175,7 +192,7 @@ public static class BD{
         return user;
     }
 
-    public static string ObtenerNombreModelo(int idModelo){
+    public static string ObtenerNombreModelo(int idModelo, List<Auto> ListaAutos){
         string nombreModelo = "";
         using (SqlConnection db = new SqlConnection(ConnectionString)){
             string sql = "SELECT NombreModelo FROM Modelo WHERE IdModelo = @idMod";
