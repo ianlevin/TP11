@@ -87,6 +87,7 @@ public class HomeController : Controller
 
     public IActionResult ProductoBuscado(string producto)
     {
+        if(TempData["UserEmail"] != null){
             ViewBag.ListaColores = BD.ObtenerColores();
             ViewBag.ListaMarcas = BD.ObtenerMarcas();
             ViewBag.ListaModelos = BD.ObtenerModelos();
@@ -109,6 +110,10 @@ public class HomeController : Controller
                 ViewBag.ListaAutos = listaAutos;
             }
             return View("Home");
+        }
+        else{
+            return RedirectToAction("Index");
+        }
     }
     public IActionResult Home(List<Auto> autos, int a)
     {   
@@ -199,7 +204,6 @@ public class HomeController : Controller
         TempData["Motor"] = Motor;
         TempData["Matricula"] = Matricula;
         TempData["Kilometraje"] = Kilometraje;
-
         TempData["PasoActualKey"] = 2;
 
         return RedirectToAction("CargarAuto");

@@ -16,9 +16,10 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Email: @ViewBag.email</li>
+                <li class="list-group-item">Telefono: @ViewBag.telefono</li>
                 @{//Este codigo se encarga de filtrar para no mostrar la informacion que no existe, falta crear formulario para poder subirla
-                    if(ViewBag.telefono != null){
-                        <li class="list-group-item">Telefono: @ViewBag.telefono</li>
+                    if(ViewBag.fechaN != DateTime.Parse("1/1/0001 00:00:00")){
+                        <li class="list-group-item">Fecha de nacimiento: @ViewBag.fechaN.ToString("dd-MM-yyyy")</li>
                     }
                     if(ViewBag.direccion != null){
                         <li class="list-group-item">Direccion: @ViewBag.direccion</li>
@@ -26,7 +27,7 @@
                 }
                 
             </ul>
-            @if(ViewBag.fechaN == null || ViewBag.direccion == null){
+            @if(ViewBag.fechaN == DateTime.Parse("1/1/0001 00:00:00") || ViewBag.direccion == null){
                 <a class="btn btn-primary" href='@Url.Action("RellenarUsuario")' style= "margin: 10px;">Rellenar informacion personal</a>
             }
             <a class="btn btn-danger" href='@Url.Action("CerrarSesion")'>Cerrar Sesion</a>
