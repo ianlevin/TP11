@@ -3,8 +3,14 @@
 </head>
 
 <body>
-    <div class = "row justify-content-center">
-        <div class="card" style="width: 78rem;">
+<div class = "centrador">
+    <div class = "formulario">
+        <h2>Informacion Personal</h2>
+    </div>
+</div>
+
+<div class = "centrador">
+    <div class = "formulario">
             <div class="card-body center-container">
                 <h5 class="card-title">@ViewBag.NombreUsuario</h5>
             </div>
@@ -19,14 +25,14 @@
                     }
 
                     if(ViewBag.fechaN == null || ViewBag.direccion == null){
-                        <a class="btn btn-danger" href='@Url.Action("RellenarUsuario")'>Rellenar informacion personal</a>
+                        <a class="btn btn-danger" href='@Url.Action("RellenarUsuario")' style= "margin: 10px;">Rellenar informacion personal</a>
                     }
                 }
                 
             </ul>
             <a class="btn btn-primary" href='@Url.Action("index")'>Cerrar Sesion</a>
-        </div>
     </div>
+</div>
 
       @if(ViewBag.AutosUsuario != null){
         <div class="mainAutos">

@@ -1,13 +1,21 @@
-<form Action='@Url.Action("LlenarInformacion")'>
-    @{
-        if(ViewBag.direccion == null){
-            <input type="text" value="" name="direccion" placeholder="Direccion">
-        }
-        if(ViewBag.fechaN == DateTime.Parse("1/1/0001 00:00:00")){
-            <input type="text" value="" name="fechanacimiento" placeholder="Fecha de nacimiento">
-        }
-        <input type="submit" value="Enviar" >
-    }
-      
+<div class = "centrador">
+    <div class = "formulario">
+        <h2>Cargar Informacion Personal</h2>
+    </div>
+</div>
 
-</form>
+<div class = "centrador">
+    <div class = "formulario">
+        <form Action='@Url.Action("LlenarInformacion")'>
+            @{
+                if(ViewBag.direccion == null){
+                    <input type="text" value="" class="form-control" name="direccion" placeholder="Direccion" style="margin: 10px;">
+                }
+                if(ViewBag.fechaN == DateTime.Parse("1/1/0001 00:00:00")){
+                    <input type="text" value="" class="form-control" name="fechanacimiento" placeholder="Fecha de nacimiento" style="margin: 10px">
+                }
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            }
+        </form>
+    </div>
+</div>

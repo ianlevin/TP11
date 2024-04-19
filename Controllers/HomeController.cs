@@ -210,7 +210,7 @@ public class HomeController : Controller
     public IActionResult CargarDatos4(IFormFile MyFile, int Precio, int IdUsuario){
         if(MyFile.Length>0){
             string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\img-autos\" + MyFile.FileName;
-            using (var stream = System.IO.File.Create(wwwRootLocal)){
+            using (var stream = System.IO.File.Create(wwwRootLocal)){ //DA ERROR SI SE USA UN ARCHIVO DE LA CARPETA
                 MyFile.CopyToAsync(stream);
             };
         }
