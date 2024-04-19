@@ -2,67 +2,77 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <form action='@Url.Action("CargarDatos3")' method="POST" class="container" enctype="multipart/form-data">  
-        
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="false" required>
-                <label class="form-check-label">No tiene aire</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="true" required>
-                <label class="form-check-label">Tiene aire</label>
-            </div>
-        </div>
 
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="false" required>
-                <label class="form-check-label">No tiene ABS</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="true" required>
-                <label class="form-check-label">Tiene ABS</label>
-            </div>
-        </div>
+<div class = "centrador">
+    <div class = "formulario">
+        <h2>Tercer paso</h2>
+    </div>
+</div>
 
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="false" required>
-                <label class="form-check-label">No tiene Airbag</label>
+<div class="centrador">
+    <div class="formulario">
+        <form action='@Url.Action("CargarDatos3")' method="POST" class="container" enctype="multipart/form-data">  
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="no_aire" name="AireAcondicionado" value="false" required>
+                    <label class="form-check-label" for="no_aire">No tiene aire</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="si_aire" name="AireAcondicionado" value="true" required>
+                    <label class="form-check-label" for="si_aire">Tiene aire</label>
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="true" required>
-                <label class="form-check-label">Tiene Airbag</label>
-            </div>
-        </div>
 
-         <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdTransmision" value="1" required>
-                <label class="form-check-label">Transmisión Automática</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="no_abs" name="ABS" value="false" required>
+                    <label class="form-check-label" for="no_abs">No tiene ABS</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="si_abs" name="ABS" value="true" required>
+                    <label class="form-check-label" for="si_abs">Tiene ABS</label>
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdTransmision" value="2" required>
-                <label class="form-check-label">Transmisión Manual</label>
-            </div>
-        </div>
 
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdDireccion" value="1" required>
-                <label class="form-check-label">Direccion hidraulica</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="no_airbag" name="Airbag" value="false" required>
+                    <label class="form-check-label" for="no_airbag">No tiene Airbag</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="si_airbag" name="Airbag" value="true" required>
+                    <label class="form-check-label" for="si_airbag">Tiene Airbag</label>
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdDireccion" value="2" required>
-                <label class="form-check-label">Direccion electrica</label>
+
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="trans_auto" name="IdTransmision" value="1" required>
+                    <label class="form-check-label" for="trans_auto">Transmisión Automática</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="trans_manual" name="IdTransmision" value="2" required>
+                    <label class="form-check-label" for="trans_manual">Transmisión Manual</label>
+                </div>
             </div>
-        </div>
 
-        <input type="hidden" name="Idusuario" value="@ViewBag.IdUsuario">
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="dir_hidraulica" name="IdDireccion" value="1" required>
+                    <label class="form-check-label" for="dir_hidraulica">Dirección hidráulica</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="dir_electrica" name="IdDireccion" value="2" required>
+                    <label class="form-check-label" for="dir_electrica">Dirección eléctrica</label>
+                </div>
+            </div>
 
-        <div class="form-group text-center mb-3">
-            <button type="submit" class="btn btn-primary">Continuar</button>
-        </div>
-    </form>
+            <input type="hidden" name="Idusuario" value="@ViewBag.IdUsuario">
+
+            <div class="form-group text-center mb-3">
+                <button type="submit" class="btn btn-primary">Continuar</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>

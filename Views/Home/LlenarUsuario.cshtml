@@ -1,0 +1,13 @@
+<form Action='@Url.Action("LlenarInformacion")'>
+    @{
+        if(ViewBag.direccion == null){
+            <input type="text" value="" name="direccion" placeholder="Direccion">
+        }
+        if(ViewBag.fechaN == DateTime.Parse("1/1/0001 00:00:00")){
+            <input type="text" value="" name="fechanacimiento" placeholder="Fecha de nacimiento">
+        }
+        <input type="submit" value="Enviar" >
+    }
+      
+
+</form>

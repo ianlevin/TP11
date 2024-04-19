@@ -2,9 +2,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+
+<div class = "centrador">
+    <div class = "formulario">
+        <h2>Ultimo paso</h2>
+    </div>
+</div>
+
+<div class = "centrador">
+    <div class = "formulario">
     <form action='@Url.Action("CargarDatos4")' method="POST" class="container" enctype="multipart/form-data">  
         <div class="form-group mb-3">
-            <label for="MyFile">Imagen del auto</label>
+            <label for="MyFile"></label>
             <input type="file" class="form-control" name="MyFile">
         </div>
 
@@ -18,4 +27,6 @@
             <button type="submit" class="btn btn-primary">Finalizar</button>
         </div>
     </form>
+    </div>
+</div>    
 </body>
