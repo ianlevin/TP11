@@ -23,7 +23,14 @@ public class HomeController : Controller
     }
 
     public IActionResult Creditos(){
-        return View("Creditos");
+        if(TempData["UserEmail"] != null){
+            string e = TempData["UserEmail"].ToString();
+            TempData["UserEmail"] = e;
+            return View("Creditos");
+        }
+        else{
+            return View("Index");
+        }
     }
 
     public IActionResult SignIn(string Email, string Password)
@@ -58,19 +65,24 @@ public class HomeController : Controller
         
     }
     public IActionResult MostrarUsuario(){
-        string e = TempData["UserEmail"].ToString();
-        Usuario UserActual = BD.ObtenerUsuario(e);
-       
-        ViewBag.AutosUsuario = BD.ObtenerAutosUsuario(UserActual.IdUsuario);
+        if (TempData["UserEmail"] != null){
+            string e = TempData["UserEmail"].ToString();
+            Usuario UserActual = BD.ObtenerUsuario(e);
+        
+            ViewBag.AutosUsuario = BD.ObtenerAutosUsuario(UserActual.IdUsuario);
 
-        ViewBag.nombreUsuario = UserActual.NombreUsuario;
-        ViewBag.telefono = UserActual.Telefono;
-        ViewBag.email = UserActual.Email;
-        ViewBag.direccion = UserActual.Direccion;
-        ViewBag.fechaN = UserActual.FechaNacimiento;
-        ViewBag.admin = UserActual.Admin;
-        TempData["UserEmail"] = e;
-        return View("Usuario");
+            ViewBag.nombreUsuario = UserActual.NombreUsuario;
+            ViewBag.telefono = UserActual.Telefono;
+            ViewBag.email = UserActual.Email;
+            ViewBag.direccion = UserActual.Direccion;
+            ViewBag.fechaN = UserActual.FechaNacimiento;
+            ViewBag.admin = UserActual.Admin;
+            TempData["UserEmail"] = e;
+            return View("Usuario");
+        }
+        else{
+            return View("Index");
+        }
     }
 
     public IActionResult ProductoBuscado(string producto)
@@ -100,20 +112,25 @@ public class HomeController : Controller
     }
     public IActionResult Home(List<Auto> autos, int a)
     {   
-        string e = TempData["UserEmail"].ToString();
-        TempData["UserEmail"] = e;
-        if(autos.Count == 0){
-            ViewBag.ListaAutos = BD.ObtenerAutos();
-        }else{
-            ViewBag.ListaAutos = autos;
-        }
-        ViewBag.ListaColores = BD.ObtenerColores();
-        ViewBag.ListaMarcas = BD.ObtenerMarcas();
-        ViewBag.ListaModelos = BD.ObtenerModelos();
-        ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
-        ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
+        if(TempData["UserEmail"] != null){
+            string e = TempData["UserEmail"].ToString();
+            TempData["UserEmail"] = e;
+            if(autos.Count == 0){
+                ViewBag.ListaAutos = BD.ObtenerAutos();
+            }else{
+                ViewBag.ListaAutos = autos;
+            }
+            ViewBag.ListaColores = BD.ObtenerColores();
+            ViewBag.ListaMarcas = BD.ObtenerMarcas();
+            ViewBag.ListaModelos = BD.ObtenerModelos();
+            ViewBag.ListaDirecciones = BD.ObtenerDirecciones();
+            ViewBag.ListaTransmisiones = BD.ObtenerTransmisiones();
 
-        return View();
+            return View();
+        }
+        else{
+            return View("Index");
+        }
     }
     public IActionResult Filtro(string filtro, int Id, List<Auto> ListaAutosPervia)
     {
@@ -159,6 +176,7 @@ public class HomeController : Controller
                 return View("CargarAuto1");
             case 2:
                 int idMarca = Convert.ToInt32(TempData["Marca"]);
+                TempData["Marca"] = idMarca;
                 ViewBag.ListaModelos = BD.ObtenerModelosXMarca(idMarca);
                 return View("CargarAuto2");
             case 3:
@@ -229,7 +247,7 @@ public class HomeController : Controller
         bool airbag = (bool)TempData["Airbag"];
         bool abs = (bool)TempData["ABS"];
 
-       Auto auto = new Auto(0, anioPublicacion, kilometraje, matricula, true, cantidadAsientos, motor, aireAcondicionado, abs, airbag, color, transmision, direccion, marca, IdUsuario, MyFile.FileName, modelo, Precio);
+        Auto auto = new Auto(0, anioPublicacion, kilometraje, matricula, true, cantidadAsientos, motor, aireAcondicionado, abs, airbag, color, transmision, direccion, marca, IdUsuario, MyFile.FileName, modelo, Precio);
 
         BD.CrearAuto(auto);
         return RedirectToAction("Home");
@@ -269,6 +287,13 @@ public class HomeController : Controller
         ViewBag.direccion = UserActual.Direccion;
         ViewBag.fechaN = UserActual.FechaNacimiento;
         return View("LlenarUsuario");
+    }
+
+    public IActionResult CerrarSesion(){
+        string e = null;
+        TempData["UserEmail"] = e;
+
+        return RedirectToAction("MostrarUsuario");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
