@@ -81,7 +81,7 @@ public static class BD{
             user = db.QueryFirstOrDefault<Usuario>(sql, new {email = Email});
         }   
         return user;
-    }
+    }   
     public static Color ObtenerColor(int idColor){
         Color user;
         using (SqlConnection db = new SqlConnection(ConnectionString)){

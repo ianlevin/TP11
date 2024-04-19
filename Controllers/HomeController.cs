@@ -44,8 +44,10 @@ public class HomeController : Controller
         }
         if(BD.ObtenerUsuario(Email) == null || User.GetContrasena() != Password){
             ViewBag.Error = "Usuario o contraseña incorrectos";
+            Response.StatusCode = 400;
             return View("Index");
         }
+        Response.StatusCode = 400;
         return RedirectToAction("Home");
         
     }
