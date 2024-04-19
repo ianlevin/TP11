@@ -23,13 +23,12 @@
                     if(ViewBag.direccion != null){
                         <li class="list-group-item">Direccion: @ViewBag.direccion</li>
                     }
-
-                    if(ViewBag.fechaN == null || ViewBag.direccion == null){
-                        <a class="btn btn-primary" href='@Url.Action("RellenarUsuario")' style= "margin: 10px;">Rellenar informacion personal</a>
-                    }
                 }
                 
             </ul>
+            @if(ViewBag.fechaN == null || ViewBag.direccion == null){
+                <a class="btn btn-primary" href='@Url.Action("RellenarUsuario")' style= "margin: 10px;">Rellenar informacion personal</a>
+            }
             <a class="btn btn-danger" href='@Url.Action("CerrarSesion")'>Cerrar Sesion</a>
     </div>
 </div>
