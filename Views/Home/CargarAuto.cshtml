@@ -2,94 +2,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <form action='@Url.Action("CargarDatosAuto")' method="POST" class="container" enctype="multipart/form-data">
+    <form action='@Url.Action("CargarAuto")' method="POST" class="container" enctype="multipart/form-data">  
         <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Año de fabricación" name="Ano" value="" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Kilometraje" name="Kilometraje" value="" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Matricula" name="Matricula" value="" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Cantidad de asientos" name="Asientos" value="" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Motor" name="Motor" value="" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="false" required>
-                <label class="form-check-label">No tiene aire</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="AireAcondicionado" value="true" required>
-                <label class="form-check-label">Tiene aire</label>
-            </div>
-        </div>
-
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="false" required>
-                <label class="form-check-label">No tiene ABS</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="ABS" value="true" required>
-                <label class="form-check-label">Tiene ABS</label>
-            </div>
-        </div>
-
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="false" required>
-                <label class="form-check-label">No tiene Airbag</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="Airbag" value="true" required>
-                <label class="form-check-label">Tiene Airbag</label>
-            </div>
-        </div>
-
-        <div class="form-group mb-3">
-            <select class="form-control" name="IdColor" type="number" placeholder="Color" required>
-                <option value="" disabled selected>Color</option>
-                @foreach (Color item in ViewBag.ListaColores)
-                {
-                    <option value="@(item.IdColor)">@item.NombreColor</option>
-                }
-            </select>
-        </div>
-
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdTransmision" value="1" required>
-                <label class="form-check-label">Transmisión Automática</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdTransmision" value="2" required>
-                <label class="form-check-label">Transmisión Manual</label>
-            </div>
-        </div>
-
-        <div class="form-group mb-3">
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdDireccion" value="1" required>
-                <label class="form-check-label">Direccion hidraulica</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="IdDireccion" value="2" required>
-                <label class="form-check-label">Direccion electrica</label>
-            </div>
-        </div>
-
-        <div class="form-group mb-3">
-            <select class="form-control" name="IdMarca" id="IdMarca" type="number" onchange=actualizarModelos() required>
+           <select class="form-control" name="IdMarca" type="number" required>
                 <option value="" disabled selected>Marca</option>
                 @foreach (Marca item in ViewBag.ListaMarcas)
                 {
@@ -99,49 +14,21 @@
         </div>
 
         <div class="form-group mb-3">
-            <label for="MyFile">Imagen del auto</label>
-            <input type="file" class="form-control" name="MyFile">
+            <input type="text" class="form-control" placeholder="Motor" name="Motor" value="" required>
         </div>
 
         <div class="form-group mb-3">
-            <select class="form-control" name="IdModelo" id="IdModelo" type="number" required>
-                <option value="" disabled selected>Modelo</option>
-                @foreach (Modelo item in ViewBag.ListaModelos)
-                {
-                    <option value="@(item.IdModelo)">@item.NombreModelo</option>
-                }
-            </select> 
+            <input type="text" class="form-control" placeholder="Matricula" name="Matricula" value="" required>
         </div>
 
         <div class="form-group mb-3">
-            <input type="text" class="form-control" placeholder="Precio de publicación" name="Precio" value="">
+            <input type="text" class="form-control" placeholder="Kilometraje" name="Kilometraje" value="" required>
         </div>
 
         <input type="hidden" name="Idusuario" value="@ViewBag.IdUsuario">
 
         <div class="form-group text-center mb-3">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Continuar</button>
         </div>
     </form>
-
-    <script>
-    function actualizarModelos() {
-        var marcaSeleccionada = document.getElementById("IdMarca").value;
-        var modelos = document.getElementsByClassName("modelo");
-
-        for (var i = 0; i < modelos.length; i++) {
-            var modelo = modelos[i];
-            var marcaModelo = modelo.getAttribute("data-marca");
-
-            if (marcaSeleccionada === marcaModelo) {
-                modelo.style.display = "block";
-            } else {
-                modelo.style.display = "none";
-            }
-        }
-    }
-</script>
 </body>
-
-
-
