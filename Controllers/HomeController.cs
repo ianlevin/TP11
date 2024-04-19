@@ -29,7 +29,7 @@ public class HomeController : Controller
             return View("Creditos");
         }
         else{
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
 
@@ -81,7 +81,7 @@ public class HomeController : Controller
             return View("Usuario");
         }
         else{
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
 
@@ -129,7 +129,7 @@ public class HomeController : Controller
             return View();
         }
         else{
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
     public IActionResult Filtro(string filtro, int Id, List<Auto> ListaAutosPervia)
@@ -161,31 +161,37 @@ public class HomeController : Controller
     }
 
     public IActionResult CargarAuto(IFormFile MyFile){
-        ViewBag.ListaColores = BD.ObtenerColores();
-        ViewBag.ListaMarcas = BD.ObtenerMarcas();
-        string e = TempData["UserEmail"].ToString();
-        TempData["UserEmail"] = e;
-        Usuario UserActual = BD.ObtenerUsuario(e);
-        ViewBag.IdUsuario = UserActual.IdUsuario;
+        if(TempData["UserEmail"] != null){
+            ViewBag.ListaColores = BD.ObtenerColores();
+            ViewBag.ListaMarcas = BD.ObtenerMarcas();
+            string e = TempData["UserEmail"].ToString();
+            TempData["UserEmail"] = e;
+            Usuario UserActual = BD.ObtenerUsuario(e);
+            ViewBag.IdUsuario = UserActual.IdUsuario;
 
-        int pasoActual = TempData.ContainsKey("PasoActualKey") ? (int)TempData["PasoActualKey"] : 1;
+            int pasoActual = TempData.ContainsKey("PasoActualKey") ? (int)TempData["PasoActualKey"] : 1;
 
-        switch (pasoActual)
-        {
-            case 1:
-                return View("CargarAuto1");
-            case 2:
-                int idMarca = Convert.ToInt32(TempData["Marca"]);
-                TempData["Marca"] = idMarca;
-                ViewBag.ListaModelos = BD.ObtenerModelosXMarca(idMarca);
-                return View("CargarAuto2");
-            case 3:
-                return View("CargarAuto3");
-            case 4:
-                return View("CargarAuto4");
-            default:
-                return RedirectToAction("CargarAuto");
+            switch (pasoActual)
+            {
+                case 1:
+                    return View("CargarAuto1");
+                case 2:
+                    int idMarca = Convert.ToInt32(TempData["Marca"]);
+                    TempData["Marca"] = idMarca;
+                    ViewBag.ListaModelos = BD.ObtenerModelosXMarca(idMarca);
+                    return View("CargarAuto2");
+                case 3:
+                    return View("CargarAuto3");
+                case 4:
+                    return View("CargarAuto4");
+                default:
+                    return RedirectToAction("CargarAuto");
+            }
         }
+        else{
+            return RedirectToAction("Index");
+        }
+        
     }
     [HttpPost]
     public IActionResult CargarDatos1(int Kilometraje, string Matricula, string Motor, int IdMarca){
@@ -279,14 +285,20 @@ public class HomeController : Controller
     }
 
     public IActionResult RellenarUsuario(){
-        string e = TempData["UserEmail"].ToString();
-        TempData["UserEmail"] = e;
-        Usuario UserActual = BD.ObtenerUsuario(e);
+        if(TempData["UserEmail"] != null){
+            string e = TempData["UserEmail"].ToString();
+            TempData["UserEmail"] = e;
+            Usuario UserActual = BD.ObtenerUsuario(e);
 
-        ViewBag.nombreUsuario = UserActual.NombreUsuario;
-        ViewBag.direccion = UserActual.Direccion;
-        ViewBag.fechaN = UserActual.FechaNacimiento;
-        return View("LlenarUsuario");
+            ViewBag.nombreUsuario = UserActual.NombreUsuario;
+            ViewBag.direccion = UserActual.Direccion;
+            ViewBag.fechaN = UserActual.FechaNacimiento;
+            return View("LlenarUsuario");
+        }
+        else{
+            return RedirectToAction("Index");
+        }
+        
     }
 
     public IActionResult CerrarSesion(){
