@@ -1,7 +1,5 @@
 ﻿* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
 }
 a{
     text-decoration: none;
@@ -37,6 +35,7 @@ nav{
     position: relative;
     padding-bottom: 0.75rem;
     color: #000000;
+    text-decoration: none;
 }
 
 .link a::after{

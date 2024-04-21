@@ -319,4 +319,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    [HttpPost]
+    public IActionResult NuevoAuto(int Ano, int Kilometraje, string Matricula, bool Disponible, int Asientos, string Motor, bool AireAcondicionado, bool ABS, bool Airbag, int IdColor, int IdTransmision, int IdDireccion, int IdMarca, int IdUsuario, string Imagen, int IdModelo, int Precio){
+
+        Auto auto = new Auto(0, Ano, Kilometraje, Matricula, Disponible, Asientos, Motor, AireAcondicionado, ABS, Airbag, IdColor, IdTransmision, IdDireccion, IdMarca, IdUsuario, Imagen, IdModelo, Precio);
+        BD.CrearAuto(auto);
+        return View("Home");
+    }
 }
