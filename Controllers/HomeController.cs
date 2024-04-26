@@ -9,6 +9,7 @@ namespace TP11.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private static List<Auto> ListaAutosPervia = new List<Auto>();
     private IWebHostEnvironment Environment;
 
     public HomeController(IWebHostEnvironment environment)
@@ -103,7 +104,7 @@ public class HomeController : Controller
                 string productoMinuscula = producto.ToLower();
                  for(int i = 0; i<listaModelos.Count; i++){
                     if(listaModelos[i].NombreModelo.ToLower().IndexOf(productoMinuscula) != -1){
-                        listaAutos.AddRange(BD.ObtenerAutoXModelo(listaModelos[i].IdModelo));
+                        listaAutos.AddRange(BD.ObtenerAutoXModelo(listaModelos[i].IdModelo, ListaAutosPervia));
                     }
                 ViewBag.buscado = producto;
             }
@@ -127,6 +128,7 @@ public class HomeController : Controller
             }else{
                 ViewBag.ListaAutos = autos;
             }
+            ListaAutosPervia = ViewBag.ListaAutos;
             ViewBag.ListaColores = BD.ObtenerColores();
             ViewBag.ListaMarcas = BD.ObtenerMarcas();
             ViewBag.ListaModelos = BD.ObtenerModelos();
@@ -139,7 +141,8 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
     }
-    public IActionResult Filtro(string filtro, int Id, List<Auto> ListaAutosPervia)
+     // Variable para almacenar autos filtrados
+     public IActionResult Filtro(string filtro, int Id)
     {
         ViewBag.ListaColores = BD.ObtenerColores();
         ViewBag.ListaMarcas = BD.ObtenerMarcas();
@@ -152,18 +155,19 @@ public class HomeController : Controller
                 ViewBag.ListaAutos = BD.ObtenerAutoXColor(Id, ListaAutosPervia);
                 break;
             case "Marca":
-                ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXMarca(Id, ListaAutosPervia); 
                 break;
             case "Modelo":
-                ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXModelo(Id, ListaAutosPervia); 
                 break;
             case "Direccion":
-                ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXDireccion(Id,ListaAutosPervia); 
                 break;
             case "Transmision":
-                ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id); 
+                ViewBag.ListaAutos = BD.ObtenerAutoXTransmision(Id,ListaAutosPervia); 
                 break;
         }
+        ListaAutosPervia = ViewBag.ListaAutos;
         return View("Home");
     }
 
