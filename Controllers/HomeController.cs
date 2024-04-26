@@ -166,7 +166,6 @@ public class HomeController : Controller
         }
         return View("Home");
     }
-
     public IActionResult CargarAuto(IFormFile MyFile){
         if(TempData["UserEmail"] != null){
             ViewBag.ListaColores = BD.ObtenerColores();
