@@ -201,7 +201,7 @@ public static class BD{
     public static List<Auto> ObtenerAutoXModelo(int idModelo, List<Auto> ListaAutos){
         List<Auto> user = new List<Auto>();
         List<Auto> listafinal = new List<Auto>();
-        if(ListaAutos != null){
+        if(ListaAutos == null){
             return user;
         }else{
             using (SqlConnection db = new SqlConnection(ConnectionString)){
