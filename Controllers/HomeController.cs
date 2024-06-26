@@ -91,6 +91,8 @@ public class HomeController : Controller
     public IActionResult ProductoBuscado(string producto)
     {
         if(TempData["UserEmail"] != null){
+            string e = TempData["UserEmail"].ToString();
+            Usuario UserActual = BD.ObtenerUsuario(e);
             ViewBag.ListaColores = BD.ObtenerColores();
             ViewBag.ListaMarcas = BD.ObtenerMarcas();
             ViewBag.ListaModelos = BD.ObtenerModelos();
@@ -111,7 +113,10 @@ public class HomeController : Controller
             }
             if(listaAutos.Count > 0){
                 ViewBag.ListaAutos = listaAutos;
+            }else{
+                ViewBag.ListaAutos = new List<Auto>();
             }
+            TempData["UserEmail"] = e;
             return View("Home");
         }
         else{
